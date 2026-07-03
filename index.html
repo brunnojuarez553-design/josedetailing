@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-meta="meta.title">José Detailing — Luxury Mobile Detailing &amp; Ceramic Coatings</title>
+<meta name="description" data-i18n-meta="meta.description" content="Luxury mobile detailing and ceramic coatings in Riverside, Ontario and Anaheim, California.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+<link rel="dns-prefetch" href="https://res.cloudinary.com">
+<link rel="preload" as="video" href="https://res.cloudinary.com/dgp7uhps3/video/upload/f_auto,q_auto:eco,w_1280/v1783032686/insta_video_67864_j39rgv.mp4" type="video/mp4" fetchpriority="high">
+<link rel="preload" as="image" href="https://res.cloudinary.com/dgp7uhps3/video/upload/f_auto,q_auto,w_1280,so_0/v1783032686/insta_video_67864_j39rgv.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#050608;
+  --black-2:#0b0d13;
+  --black-3:#12151c;
+  --white:#f3f5f8;
+  --grey:#8b909c;
+  --grey-dim:#565b66;
+  --line:#20242e;
+  --blue:#3f6bff;
+  --blue-glow:rgba(63,107,255,.35);
+  --turquoise:#22d3c1;
+  --turquoise-glow:rgba(34,211,193,.3);
+  --font-display:'Fraunces', serif;
+  --font-body:'Inter', sans-serif;
+  --font-mono:'IBM Plex Mono', monospace;
+  --ease:cubic-bezier(.16,.8,.24,1);
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%; text-size-adjust:100%;}
+input, textarea, select{font-size:16px;}
+body{
+  background:var(--black);
+  color:var(--white);
+  font-family:var(--font-body);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--blue); color:#fff;}
+a{color:inherit; text-decoration:none;}
+img{max-width:100%; display:block;}
+button{font-family:inherit; cursor:pointer; border:none; background:none; color:inherit;}
+.wrap{max-width:1240px; margin:0 auto; padding:0 32px;}
+.eyebrow{
+  font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.18em;
+  font-size:11px; color:var(--turquoise); display:flex; align-items:center; gap:10px;
+}
+.eyebrow::before{content:""; width:22px; height:1px; background:var(--turquoise);}
+h1,h2,h3{font-family:var(--font-display); font-weight:500; letter-spacing:-.01em; line-height:1.05;}
+.italic{font-style:italic; font-weight:400; color:var(--turquoise);}
+.section-title{font-size:clamp(32px,4.4vw,56px); margin:18px 0 16px;}
+.section-sub{color:var(--grey); max-width:560px; font-size:16px; line-height:1.6;}
+.reveal{opacity:0; transform:translateY(36px); transition:opacity 1s var(--ease), transform 1s var(--ease);}
+.reveal.in{opacity:1; transform:translateY(0);}
+.btn{
+  display:inline-flex; align-items:center; gap:10px; padding:16px 30px; border-radius:100px;
+  font-size:13px; letter-spacing:.04em; font-weight:500; text-transform:uppercase;
+  position:relative; overflow:hidden; transition:transform .5s var(--ease), box-shadow .5s var(--ease);
+}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--turquoise)); color:#04070f;}
+.btn-primary:hover{transform:translateY(-3px); box-shadow:0 18px 40px -12px var(--blue-glow);}
+.btn-ghost{border:1px solid rgba(255,255,255,.18); color:var(--white); backdrop-filter:blur(6px);}
+.btn-ghost:hover{border-color:var(--turquoise); color:var(--turquoise); transform:translateY(-3px);}
+
+/* NAV */
+header{
+  position:fixed; top:0; left:0; right:0; z-index:500;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:22px 40px; transition:background .5s var(--ease), padding .5s var(--ease), border-color .5s var(--ease);
+  border-bottom:1px solid transparent;
+}
+header.scrolled{background:rgba(5,6,8,.78); backdrop-filter:blur(16px); padding:14px 40px; border-color:var(--line);}
+.logo{font-family:var(--font-display); font-size:20px; letter-spacing:.02em; display:flex; align-items:center; gap:10px;}
+.logo-mark{width:38px; height:38px; border-radius:50%; object-fit:cover; border:1px solid var(--line); box-shadow:0 4px 14px rgba(0,0,0,.4); flex-shrink:0;}
+header .logo-mark{width:56px; height:56px;}
+.logo span{color:var(--turquoise); font-style:italic;}
+nav.links{display:flex; gap:34px; font-size:13px; letter-spacing:.03em;}
+nav.links a{position:relative; color:var(--grey); transition:color .35s;}
+nav.links a:hover{color:var(--white);}
+nav.links a::after{content:""; position:absolute; left:0; bottom:-6px; width:0; height:1px; background:var(--turquoise); transition:width .35s var(--ease);}
+nav.links a:hover::after{width:100%;}
+.nav-right{display:flex; align-items:center; gap:22px;}
+.lang-switch{
+  display:flex; align-items:center; border:1px solid rgba(255,255,255,.15); border-radius:100px; padding:4px; font-family:var(--font-mono); font-size:11px;
+}
+.lang-switch button{padding:6px 12px; border-radius:100px; color:var(--grey); transition:all .3s var(--ease);}
+.lang-switch button.active{background:var(--white); color:var(--black);}
+.nav-toggle{display:none; flex-direction:column; gap:5px; cursor:pointer; padding:10px; margin:-10px; z-index:610;}
+.nav-toggle span{width:22px; height:2px; background:var(--white); transition:transform .35s var(--ease), opacity .3s var(--ease);}
+.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-toggle.open span:nth-child(2){opacity:0;}
+.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+/* MOBILE MENU */
+.mobile-menu{position:fixed; inset:0; z-index:599; background:rgba(5,6,8,.98); backdrop-filter:blur(20px); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; opacity:0; pointer-events:none; transform:translateY(-14px); transition:opacity .4s var(--ease), transform .4s var(--ease);}
+.mobile-menu.open{opacity:1; pointer-events:all; transform:translateY(0);}
+.mobile-menu a{font-family:var(--font-display); font-size:26px; color:var(--white); padding:12px 0;}
+.mobile-menu a:active{color:var(--turquoise);}
+.mobile-menu .btn{margin-top:18px;}
+.mobile-menu .lang-switch{margin-top:26px;}
+body.menu-open{overflow:hidden;}
+
+/* HERO */
+.hero{
+  position:relative; min-height:100vh; display:flex; align-items:flex-end;
+  padding:140px 0 90px; overflow:hidden;
+}
+.hero-media{position:absolute; inset:0; z-index:0;}
+.hero-media video{width:100%; height:100%; object-fit:cover; filter:grayscale(.35) brightness(.55) contrast(1.15); transform:scale(1.08); animation:kenburns 26s ease-in-out infinite alternate;}
+@keyframes kenburns{0%{transform:scale(1.08) translate(0,0);}100%{transform:scale(1.16) translate(-1.5%,-1%);}}
+.hero-media::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(5,6,8,.35) 0%, rgba(5,6,8,.55) 55%, var(--black) 96%);}
+.hero-media::before{content:""; position:absolute; inset:0; background:radial-gradient(ellipse at 20% 0%, var(--blue-glow), transparent 55%); mix-blend-mode:screen; opacity:.6; z-index:2;}
+.hero-content{position:relative; z-index:3; width:100%;}
+.hero-eyebrow{margin-bottom:26px;}
+.hero h1{font-size:clamp(42px,7.2vw,104px); max-width:920px;}
+.hero-shine{background:linear-gradient(100deg, var(--white) 30%, var(--turquoise) 45%, var(--white) 60%); background-size:220% 100%; -webkit-background-clip:text; background-clip:text; color:transparent; animation:shine 5s linear infinite;}
+@keyframes shine{0%{background-position:200% 0;}100%{background-position:-40% 0;}}
+.hero-subtitle{margin-top:26px; font-size:18px; color:var(--grey); max-width:480px; line-height:1.6;}
+.hero-cta{display:flex; gap:18px; margin-top:44px; flex-wrap:wrap;}
+.hero-meta{position:absolute; right:32px; bottom:90px; z-index:3; display:flex; flex-direction:column; gap:10px; align-items:flex-end; max-width:60vw;}
+.hero-meta .area{font-family:var(--font-body); font-size:12.5px; font-weight:500; color:var(--white); letter-spacing:.02em; background:rgba(5,6,8,.5); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,.14); padding:10px 18px; border-radius:100px; white-space:nowrap;}
+.scroll-cue{position:absolute; left:40px; bottom:36px; z-index:3; display:flex; align-items:center; gap:10px; font-family:var(--font-mono); font-size:11px; color:var(--grey); letter-spacing:.1em; text-transform:uppercase;}
+.scroll-line{width:1px; height:40px; background:linear-gradient(var(--turquoise), transparent); animation:scrolldown 2s ease-in-out infinite;}
+@keyframes scrolldown{0%{transform:scaleY(0); transform-origin:top;}50%{transform:scaleY(1); transform-origin:top;}50.01%{transform-origin:bottom;}100%{transform:scaleY(0); transform-origin:bottom;}}
+
+section{position:relative; padding:150px 0;}
+.section-head{display:flex; justify-content:space-between; align-items:flex-end; gap:40px; margin-bottom:70px; flex-wrap:wrap;}
+
+/* WHY CHOOSE */
+.why-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--line); border:1px solid var(--line); border-radius:24px; overflow:hidden;}
+.why-card{background:var(--black-2); padding:44px 34px; min-height:270px; display:flex; flex-direction:column; justify-content:space-between; transition:background .5s var(--ease), transform .5s var(--ease);}
+.why-card:hover{background:var(--black-3); transform:translateY(-6px);}
+.why-num{font-family:var(--font-mono); font-size:12px; color:var(--grey-dim);}
+.why-icon{width:44px; height:44px; margin-bottom:20px;}
+.why-card h3{font-size:21px; font-weight:500; margin-bottom:10px;}
+.why-card p{color:var(--grey); font-size:14px; line-height:1.6;}
+
+/* BEFORE AFTER */
+.ba-shell{position:relative; border-radius:24px; overflow:hidden; aspect-ratio:16/8.5; border:1px solid var(--line);}
+.ba-shell img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;}
+.ba-before{filter:grayscale(.2) brightness(.7) saturate(.7);}
+.ba-after{clip-path:inset(0 0 0 var(--ba,50%));}
+.ba-line{position:absolute; top:0; bottom:0; left:var(--ba,50%); width:2px; background:var(--turquoise); box-shadow:0 0 20px var(--turquoise-glow); transform:translateX(-1px);}
+.ba-handle{position:absolute; top:50%; left:var(--ba,50%); width:50px; height:50px; border-radius:50%; background:var(--white); transform:translate(-50%,-50%); display:flex; align-items:center; justify-content:center; box-shadow:0 10px 30px rgba(0,0,0,.4);}
+.ba-handle svg{width:18px; color:var(--black);}
+.ba-range{position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:ew-resize;}
+.ba-tag{position:absolute; top:24px; font-family:var(--font-mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; padding:8px 14px; border-radius:100px; background:rgba(5,6,8,.6); backdrop-filter:blur(6px); border:1px solid rgba(255,255,255,.15);}
+.ba-tag.before{left:24px;}
+.ba-tag.after{right:24px; color:var(--turquoise); border-color:var(--turquoise-glow);}
+#before-after{position:relative; overflow:hidden;}
+#before-after::before{content:""; position:absolute; inset:0; background:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032198/IMG_8367_z2ysjl.jpg') center/cover no-repeat; opacity:.38; filter:grayscale(.2); z-index:0;}
+#before-after::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,var(--black) 0%,rgba(5,6,8,.55) 40%,var(--black) 100%); z-index:0;}
+#before-after .wrap{position:relative; z-index:1;}
+#why{position:relative; overflow:hidden;}
+#services{position:relative; overflow:hidden;}
+#services::before{content:""; position:absolute; inset:0; background:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032151/IMG_8384_rrlg4s.jpg') center/cover no-repeat; opacity:.38; filter:grayscale(.2); z-index:0;}
+#services::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,var(--black) 0%,rgba(5,6,8,.55) 40%,var(--black) 100%); z-index:0;}
+#services .wrap{position:relative; z-index:1;}
+#calculator{position:relative; overflow:hidden;}
+#calculator::before{content:""; position:absolute; inset:0; background:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783036384/7abd10_f6e76e27b8af4aecb0fe8d77fb9ab706_mv2_degcvk.avif') center/cover no-repeat; opacity:.38; filter:grayscale(.2); z-index:0;}
+#calculator::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,var(--black) 0%,rgba(5,6,8,.55) 40%,var(--black) 100%); z-index:0;}
+#calculator .wrap{position:relative; z-index:1;}
+#why::before{content:""; position:absolute; inset:0; background:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032151/IMG_8384_rrlg4s.jpg') center/cover no-repeat; opacity:.38; filter:grayscale(.2); z-index:0;}
+#why::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,var(--black) 0%,rgba(5,6,8,.55) 40%,var(--black) 100%); z-index:0;}
+#why .wrap{position:relative; z-index:1;}
+#ceramic{position:relative; overflow:hidden;}
+#ceramic::before{content:""; position:absolute; inset:0; background:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032180/IMG_8374_rckxpr.jpg') center/cover no-repeat; opacity:.38; filter:grayscale(.2); z-index:0;}
+#ceramic::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,var(--black) 0%,rgba(5,6,8,.55) 40%,var(--black) 100%); z-index:0;}
+#ceramic .wrap{position:relative; z-index:1;}
+#process{position:relative; overflow:hidden;}
+#process::before{content:""; position:absolute; inset:0; background:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032180/IMG_8373_wkaj0t.jpg') center/cover no-repeat; opacity:.38; filter:grayscale(.2); z-index:0;}
+#process::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,var(--black) 0%,rgba(5,6,8,.55) 40%,var(--black) 100%); z-index:0;}
+#process .wrap{position:relative; z-index:1;}
+#testimonials{position:relative; overflow:hidden;}
+#testimonials::before{content:""; position:absolute; inset:0; background:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032185/IMG_8371_bdnxjz.jpg') center/cover no-repeat; opacity:.38; filter:grayscale(.2); z-index:0;}
+#testimonials::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,var(--black) 0%,rgba(5,6,8,.55) 40%,var(--black) 100%); z-index:0;}
+#testimonials .wrap{position:relative; z-index:1;}
+#areas{position:relative; overflow:hidden;}
+#areas::before{content:""; position:absolute; inset:0; background:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032185/IMG_8371_bdnxjz.jpg') center/cover no-repeat; opacity:.38; filter:grayscale(.2); z-index:0;}
+#areas::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,var(--black) 0%,rgba(5,6,8,.55) 40%,var(--black) 100%); z-index:0;}
+#areas .wrap{position:relative; z-index:1;}
+
+/* ABOUT */
+#about{overflow:hidden;}
+#about::before{content:""; position:absolute; inset:0; background:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032154/IMG_8382_aqq1rw.jpg') center/cover no-repeat; opacity:.32; filter:grayscale(.2); z-index:0;}
+#about::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,var(--black) 0%,rgba(5,6,8,.6) 40%,var(--black) 100%); z-index:0;}
+#about .wrap{position:relative; z-index:1;}
+.about-grid{display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center;}
+.about-visual{position:relative; aspect-ratio:4/5; border-radius:24px; overflow:hidden; border:1px solid var(--line); box-shadow:0 30px 60px rgba(0,0,0,.5); cursor:pointer;}
+.about-video{width:100%; height:100%; object-fit:cover; display:block;}
+.about-play{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:3; width:76px; height:76px; border-radius:50%; background:linear-gradient(135deg,var(--blue),var(--turquoise)); color:#04070f; display:flex; align-items:center; justify-content:center; box-shadow:0 20px 50px -10px var(--blue-glow); transition:transform .4s var(--ease), opacity .4s var(--ease);}
+.about-play svg{margin-left:3px;}
+.about-play:hover{transform:translate(-50%,-50%) scale(1.08);}
+.about-visual.playing .about-play{opacity:0; pointer-events:none; transform:translate(-50%,-50%) scale(.8);}
+.about-visual::before{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(5,6,8,.05) 0%, rgba(5,6,8,.45) 100%); z-index:1; transition:opacity .4s var(--ease); pointer-events:none;}
+.about-visual.playing::before{opacity:0;}
+.about-visual .about-tag{position:absolute; bottom:24px; left:24px; z-index:2; background:rgba(5,6,8,.65); backdrop-filter:blur(8px); border:1px solid var(--line); padding:12px 18px; border-radius:14px; font-family:var(--font-mono); font-size:11px; color:var(--turquoise); text-transform:uppercase; letter-spacing:.08em; transition:opacity .4s var(--ease);}
+.about-visual.playing .about-tag{opacity:0;}
+.about-content p{color:var(--grey); font-size:15px; line-height:1.75; margin-bottom:18px; max-width:520px;}
+.about-stats{display:flex; gap:40px; margin:34px 0 36px; flex-wrap:wrap;}
+.about-stat-num{font-family:var(--font-mono); font-size:32px; color:var(--white); font-weight:500;}
+.about-stat-label{font-size:12px; color:var(--grey); text-transform:uppercase; letter-spacing:.06em; margin-top:6px; max-width:130px;}
+
+/* CERAMIC */
+.ceramic-grid{display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center;}
+.ceramic-visual{position:relative; aspect-ratio:1/1; border-radius:24px; overflow:hidden; border:1px solid var(--line); box-shadow:0 30px 60px rgba(0,0,0,.5);}
+.ceramic-visual img{width:100%; height:100%; object-fit:cover; display:block;}
+.layer.in{opacity:1; transform:translateY(0);}
+.ceramic-list{display:flex; flex-direction:column; gap:0;}
+.ceramic-item{padding:26px 0; border-top:1px solid var(--line); display:grid; grid-template-columns:60px 1fr; gap:20px; align-items:flex-start;}
+.ceramic-item:last-child{border-bottom:1px solid var(--line);}
+.ceramic-item .tag{font-family:var(--font-mono); font-size:11px; color:var(--turquoise);}
+.ceramic-item h4{font-size:18px; font-weight:500; margin-bottom:6px;}
+.ceramic-item p{color:var(--grey); font-size:14px; line-height:1.6;}
+
+/* PROCESS */
+.process-track{display:flex; flex-direction:column;}
+.process-step{display:grid; grid-template-columns:100px 1fr; gap:30px; padding:38px 0; border-top:1px solid var(--line); position:relative;}
+.process-step:last-child{border-bottom:1px solid var(--line);}
+.process-step .pnum{font-family:var(--font-mono); font-size:14px; color:var(--grey-dim); position:relative;}
+.process-step .pnum .dot{width:8px; height:8px; border-radius:50%; background:var(--line); margin-bottom:14px; transition:background .5s, box-shadow .5s;}
+.process-step.in .pnum .dot{background:var(--turquoise); box-shadow:0 0 14px var(--turquoise-glow);}
+.process-step h4{font-size:24px; font-weight:500; margin-bottom:6px;}
+.process-step p{color:var(--grey); font-size:14px; max-width:480px;}
+.process-line{position:absolute; left:104px; top:0; bottom:0; width:1px; background:var(--line); z-index:-1;}
+
+/* RESULTS */
+.results-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:2px; background:var(--line); border-radius:24px; overflow:hidden; border:1px solid var(--line);}
+.result{background:var(--black-2); padding:50px 30px; text-align:center;}
+.result .num{font-family:var(--font-mono); font-size:clamp(32px,4vw,52px); color:var(--white); font-weight:500;}
+.result .num span{color:var(--turquoise);}
+.result .label{margin-top:10px; font-size:13px; color:var(--grey); text-transform:uppercase; letter-spacing:.06em;}
+
+/* TESTIMONIALS */
+.test-scroll{display:flex; gap:24px; overflow-x:auto; padding-bottom:20px; scroll-snap-type:x mandatory;}
+.test-scroll::-webkit-scrollbar{height:4px;}
+.test-scroll::-webkit-scrollbar-thumb{background:var(--line); border-radius:10px;}
+.test-card{min-width:400px; scroll-snap-align:start; background:var(--black-2); border:1px solid var(--line); border-radius:20px; padding:38px; display:flex; flex-direction:column; justify-content:space-between; min-height:260px; transition:transform .5s var(--ease), border-color .5s;}
+.test-card:hover{transform:translateY(-6px); border-color:var(--turquoise-glow);}
+.stars{color:var(--turquoise); font-size:14px; letter-spacing:2px; margin-bottom:18px;}
+.test-quote{font-family:var(--font-display); font-size:19px; line-height:1.5; font-weight:400;}
+.test-person{display:flex; align-items:center; gap:12px; margin-top:26px;}
+.test-avatar{width:40px; height:40px; border-radius:50%; object-fit:cover;}
+.test-name{font-size:13px; font-weight:600;}
+.test-car{font-size:12px; color:var(--grey);}
+
+/* MAP */
+.contact-methods{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-bottom:36px;}
+.contact-card{display:flex; align-items:center; gap:16px; background:var(--black-2); border:1px solid var(--line); border-radius:20px; padding:26px 24px; transition:transform .4s var(--ease), border-color .4s var(--ease);}
+.contact-card:hover{transform:translateY(-4px); border-color:var(--turquoise);}
+.contact-icon{width:46px; height:46px; border-radius:50%; background:rgba(34,211,193,.1); display:flex; align-items:center; justify-content:center; color:var(--turquoise); flex-shrink:0;}
+.contact-icon svg{width:22px; height:22px;}
+.contact-card h4{font-size:15px; font-weight:600; margin-bottom:4px;}
+.contact-card p{font-size:13px; color:var(--grey);}
+.map-shell{position:relative; background:var(--black-2); border:1px solid var(--line); border-radius:24px; padding:60px; display:grid; grid-template-columns:1fr 1.2fr; gap:50px; align-items:center;}
+.map-list{display:flex; flex-direction:column; gap:26px;}
+.map-city{display:flex; align-items:center; gap:16px;}
+.map-dot{width:10px; height:10px; border-radius:50%; background:var(--turquoise); box-shadow:0 0 16px var(--turquoise-glow);}
+.map-city h4{font-size:20px; font-weight:500;}
+.map-city p{font-size:13px; color:var(--grey);}
+.map-svg{width:100%; height:auto;}
+#realMap{background:var(--black-3); border:1px solid var(--line);}
+#realMap .leaflet-tile-pane{filter:grayscale(1) invert(1) brightness(.85) contrast(1.1);}
+#realMap .leaflet-control-attribution{background:rgba(5,6,8,.7)!important; color:var(--grey-dim)!important; font-size:9px!important;}
+#realMap .leaflet-control-attribution a{color:var(--grey)!important;}
+.map-marker-pin{width:16px; height:16px; border-radius:50%; background:var(--turquoise); box-shadow:0 0 0 4px rgba(34,211,193,.25), 0 0 16px var(--turquoise-glow); border:2px solid var(--black);}
+.leaflet-popup-content-wrapper{background:var(--black-2); color:var(--white); border:1px solid var(--line); border-radius:10px;}
+.leaflet-popup-content{font-family:var(--font-mono); font-size:12px; margin:8px 12px;}
+.leaflet-popup-tip{background:var(--black-2); border:1px solid var(--line);}
+.map-line{stroke-dasharray:400; stroke-dashoffset:400; animation:draw 3s var(--ease) forwards infinite alternate;}
+@keyframes draw{to{stroke-dashoffset:0;}}
+
+/* GALLERY */
+.gallery{columns:3 220px; gap:16px;}
+.gallery img{margin-bottom:16px; border-radius:16px; filter:grayscale(.15) brightness(.85); transition:filter .5s, transform .6s var(--ease);}
+.gallery img:hover{filter:grayscale(0) brightness(1); transform:scale(1.02);}
+
+/* SERVICES */
+.services-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--line); border:1px solid var(--line); border-radius:24px; overflow:hidden;}
+.service-card{position:relative; background-size:cover; background-position:center; padding:40px 32px; min-height:220px; display:flex; flex-direction:column; justify-content:space-between; transition:transform .4s; overflow:hidden;}
+.service-card::before{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(5,6,8,.35) 0%, rgba(5,6,8,.75) 60%, var(--black-2) 100%); z-index:0;}
+.service-card > *{position:relative; z-index:1;}
+.service-card:hover{transform:scale(1.02);}
+.service-card h4{font-size:19px; font-weight:500; margin:16px 0 8px;}
+.service-card p{font-size:13px; color:var(--grey); line-height:1.5;}
+
+/* MAINTENANCE PACKAGES */
+.maint-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+.maint-card{position:relative; display:grid; grid-template-columns:230px 1fr; background:var(--black-2); border:1px solid var(--line); border-radius:24px; overflow:hidden; transition:transform .4s var(--ease), border-color .4s var(--ease);}
+.maint-card:hover{transform:translateY(-4px); border-color:rgba(34,211,193,.35);}
+.maint-card.featured{border-color:var(--turquoise);}
+.maint-img{background-size:cover; background-position:center; position:relative; min-height:100%;}
+.maint-img::after{content:""; position:absolute; inset:0; background:linear-gradient(90deg, transparent 70%, var(--black-2) 100%);}
+.maint-badge{position:absolute; top:20px; left:20px; z-index:2; background:linear-gradient(135deg,var(--blue),var(--turquoise)); color:#04070f; font-family:var(--font-mono); font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; padding:7px 14px; border-radius:100px;}
+.maint-content{padding:34px 30px; display:flex; flex-direction:column;}
+.maint-content h4{font-size:20px; font-weight:500; margin-bottom:10px; line-height:1.2;}
+.maint-desc{color:var(--grey); font-size:13.5px; line-height:1.6; margin-bottom:20px;}
+.maint-list{list-style:none; margin-bottom:24px; flex:1;}
+.maint-list li{display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--white); margin-bottom:11px;}
+.maint-list li svg{flex-shrink:0; margin-top:1px; color:var(--turquoise);}
+.maint-btn{display:inline-flex; align-items:center; gap:8px; padding:13px 24px; border-radius:100px; border:1px solid rgba(255,255,255,.18); font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--white); align-self:flex-start; transition:all .3s var(--ease);}
+.maint-btn:hover{border-color:var(--turquoise); color:var(--turquoise); background:rgba(34,211,193,.08);}
+.maint-actions{display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
+.maint-wa{display:inline-flex; align-items:center; gap:8px; padding:13px 20px; border-radius:100px; background:#25D366; color:#04120a; font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; transition:all .3s var(--ease);}
+.maint-wa svg{width:15px; height:15px; flex-shrink:0;}
+.maint-wa:hover{transform:translateY(-2px); box-shadow:0 14px 30px -10px rgba(37,211,102,.5);}
+
+/* PLAN MODAL */
+.plan-modal{position:fixed; inset:0; z-index:700; display:flex; align-items:center; justify-content:center; padding:24px; opacity:0; pointer-events:none; transition:opacity .4s var(--ease);}
+.plan-modal.open{opacity:1; pointer-events:all;}
+.plan-modal-overlay{position:absolute; inset:0; background:rgba(5,6,8,.82); backdrop-filter:blur(10px);}
+.plan-modal-box{position:relative; z-index:1; width:100%; max-width:560px; max-height:86vh; overflow-y:auto; background:var(--black-2); border:1px solid var(--line); border-radius:24px; box-shadow:0 40px 100px -20px rgba(0,0,0,.7); transform:translateY(24px) scale(.97); transition:transform .4s var(--ease);}
+.plan-modal.open .plan-modal-box{transform:translateY(0) scale(1);}
+.plan-modal-close{position:absolute; top:16px; right:16px; z-index:3; width:38px; height:38px; border-radius:50%; background:rgba(5,6,8,.6); backdrop-filter:blur(6px); border:1px solid rgba(255,255,255,.15); color:var(--white); font-size:16px; display:flex; align-items:center; justify-content:center; transition:all .3s var(--ease);}
+.plan-modal-close:hover{border-color:var(--turquoise); color:var(--turquoise);}
+.plan-modal-img{width:100%; height:220px; background-size:cover; background-position:center; position:relative;}
+.plan-modal-img::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(5,6,8,0) 55%, var(--black-2) 100%);}
+.plan-modal-content{padding:30px 32px 34px;}
+.plan-modal-badge{display:inline-block; margin-bottom:14px; background:linear-gradient(135deg,var(--blue),var(--turquoise)); color:#04070f; font-family:var(--font-mono); font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; padding:7px 14px; border-radius:100px;}
+.plan-modal-title{font-size:26px; margin-bottom:14px;}
+.plan-modal-desc{color:var(--grey); font-size:14.5px; line-height:1.7; margin-bottom:22px;}
+.plan-modal-list{list-style:none; margin-bottom:26px;}
+.plan-modal-list li{display:flex; align-items:flex-start; gap:10px; font-size:13.5px; color:var(--white); margin-bottom:12px;}
+.plan-modal-list li svg{flex-shrink:0; margin-top:1px; color:var(--turquoise);}
+.plan-modal-actions{display:flex; gap:12px; flex-wrap:wrap;}
+body.modal-open{overflow:hidden;}
+
+/* CALCULATOR */
+.calc-shell{background:var(--black-2); border:1px solid var(--line); border-radius:24px; padding:56px; display:grid; grid-template-columns:1fr 1fr; gap:60px;}
+.calc-field{margin-bottom:28px;}
+.calc-field label{display:block; font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:var(--grey); margin-bottom:12px;}
+.calc-options{display:flex; gap:10px; flex-wrap:wrap;}
+.calc-opt{padding:12px 18px; border:1px solid var(--line); border-radius:100px; font-size:13px; color:var(--grey); transition:all .3s var(--ease);}
+.calc-opt.active{border-color:var(--turquoise); color:var(--turquoise); background:rgba(34,211,193,.08);}
+.calc-result{display:flex; flex-direction:column; justify-content:center; align-items:flex-start; border-left:1px solid var(--line); padding-left:60px;}
+.calc-price{font-family:var(--font-mono); font-size:56px; color:var(--white);}
+.calc-price span{color:var(--turquoise);}
+.calc-note{font-size:13px; color:var(--grey); margin-top:14px; max-width:280px; line-height:1.6;}
+
+/* FAQ */
+.faq-item{border-top:1px solid var(--line);}
+.faq-item:last-child{border-bottom:1px solid var(--line);}
+.faq-q{width:100%; display:flex; justify-content:space-between; align-items:center; padding:28px 0; font-size:18px; text-align:left; font-family:var(--font-display); font-weight:500;}
+.faq-q .plus{font-family:var(--font-mono); font-size:20px; color:var(--turquoise); transition:transform .4s var(--ease);}
+.faq-item.open .faq-q .plus{transform:rotate(45deg);}
+.faq-a{max-height:0; overflow:hidden; transition:max-height .5s var(--ease);}
+.faq-a p{color:var(--grey); font-size:14px; line-height:1.7; padding-bottom:26px; max-width:640px;}
+
+/* SECTION PHOTO BACKGROUND (overlay) */
+.section-photo-bg{overflow:hidden;}
+.section-photo-bg::before{content:""; position:absolute; inset:0; background-image:var(--bg-photo); background-size:cover; background-position:center; filter:grayscale(.3) brightness(.32); z-index:0;}
+.section-photo-bg::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(5,6,8,.9), rgba(5,6,8,.95)); z-index:0;}
+.section-photo-bg > .wrap{position:relative; z-index:1;}
+
+/* FINAL CTA / BOOKING FORM */
+.final-cta{position:relative; border-radius:32px; overflow:hidden; padding:80px 60px; margin:0 32px;}
+.final-cta img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:grayscale(.25) brightness(.32);}
+.final-cta::after{content:""; position:absolute; inset:0; background:radial-gradient(ellipse at top left, rgba(63,107,255,.28), rgba(5,6,8,.94));}
+.final-cta-content{position:relative; z-index:2;}
+.final-cta h2{font-size:clamp(32px,5vw,56px); max-width:560px; margin:18px 0 20px;}
+.final-cta-sub{color:var(--grey); font-size:16px; line-height:1.7; max-width:440px; margin-bottom:36px;}
+.final-cta-perks{display:flex; flex-direction:column; gap:16px; margin-top:8px;}
+.final-cta-perks div{display:flex; align-items:center; gap:12px; font-size:14px; color:var(--white);}
+.final-cta-perks svg{flex-shrink:0; color:var(--turquoise);}
+.cta-grid{position:relative; z-index:2; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;}
+.cta-form{background:rgba(11,13,19,.7); border:1px solid var(--line); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); border-radius:24px; padding:36px;}
+.cta-form-title{font-family:var(--font-display); font-size:22px; font-weight:500; margin-bottom:6px;}
+.cta-form-note{color:var(--grey); font-size:13px; margin-bottom:26px;}
+.cf-field{margin-bottom:16px;}
+.cf-field label{display:block; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.1em; font-size:10px; color:var(--grey); margin-bottom:8px;}
+.cf-row{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+.cf-input, .cf-select, .cf-textarea{
+  width:100%; background:var(--black-2); border:1px solid var(--line); border-radius:12px;
+  padding:14px 16px; color:var(--white); font-family:var(--font-body); font-size:14px;
+  transition:border-color .3s var(--ease), background .3s var(--ease);
+}
+.cf-input::placeholder, .cf-textarea::placeholder{color:var(--grey-dim);}
+.cf-input:focus, .cf-select:focus, .cf-textarea:focus{outline:none; border-color:var(--turquoise); background:var(--black-3);}
+.cf-select{appearance:none; -webkit-appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%238b909c' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; padding-right:38px;}
+.cf-textarea{resize:vertical; min-height:80px; font-family:var(--font-body);}
+.cf-submit{width:100%; justify-content:center; margin-top:6px; border:none;}
+.cf-status{margin-top:14px; font-size:13px; color:var(--turquoise); text-align:center; min-height:16px;}
+
+/* FOOTER */
+footer{padding:80px 0 40px; border-top:1px solid var(--line);}
+.footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; margin-bottom:60px;}
+.footer-col h5{font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:var(--grey); margin-bottom:20px;}
+.footer-col a, .footer-col p{display:block; color:var(--grey); font-size:14px; margin-bottom:12px; transition:color .3s;}
+.footer-col a:hover{color:var(--turquoise);}
+.footer-bottom{display:flex; justify-content:space-between; padding-top:30px; border-top:1px solid var(--line); font-size:12px; color:var(--grey-dim); flex-wrap:wrap; gap:10px;}
+
+/* AI ADVISOR */
+.ai-fab{position:fixed; bottom:28px; right:28px; z-index:600; width:80px; height:80px; border-radius:50%; cursor:pointer; transition:transform .4s var(--ease);}
+.ai-fab:hover{transform:translateY(-4px) scale(1.05);}
+.ai-fab img{width:100%; height:100%; border-radius:50%; object-fit:cover; display:block; position:relative; z-index:2; box-shadow:0 20px 50px -12px rgba(0,0,0,.6); border:2px solid var(--black-2);}
+.ai-fab::before,.ai-fab::after{content:""; position:absolute; inset:0; border-radius:50%; border:2px solid var(--turquoise); z-index:1; animation:fabRing 2.6s ease-out infinite;}
+.ai-fab::after{animation-delay:1.3s;}
+@keyframes fabRing{0%{transform:scale(1); opacity:.65;}100%{transform:scale(1.7); opacity:0;}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 var(--blue-glow);}50%{box-shadow:0 0 0 10px transparent;}}
+.ai-tooltip{position:fixed; bottom:104px; right:24px; z-index:601; max-width:230px; background:var(--black-2); border:1px solid var(--line); border-radius:16px; padding:16px 32px 16px 18px; font-size:13px; line-height:1.5; color:var(--white); box-shadow:0 20px 50px -12px rgba(0,0,0,.6); opacity:0; transform:translateY(12px) scale(.94); pointer-events:none; transition:opacity .5s var(--ease), transform .5s var(--ease);}
+.ai-tooltip.show{opacity:1; transform:translateY(0) scale(1); pointer-events:auto;}
+.ai-tooltip::after{content:""; position:absolute; bottom:-7px; right:36px; width:14px; height:14px; background:var(--black-2); border-right:1px solid var(--line); border-bottom:1px solid var(--line); transform:rotate(45deg);}
+.ai-tooltip-close{position:absolute; top:10px; right:12px; font-size:12px; color:var(--grey); cursor:pointer; line-height:1;}
+.ai-tooltip-close:hover{color:var(--turquoise);}
+.ai-panel{position:fixed; bottom:100px; right:28px; width:380px; max-width:88vw; background:var(--black-2); border:1px solid var(--line); border-radius:22px; z-index:601; box-shadow:0 30px 80px -20px rgba(0,0,0,.7); display:flex; flex-direction:column; max-height:70vh; opacity:0; pointer-events:none; transform:translateY(20px) scale(.97); transition:all .4s var(--ease);}
+.ai-panel.open{opacity:1; pointer-events:all; transform:translateY(0) scale(1);}
+.ai-head{display:flex; align-items:center; gap:12px; padding:20px; border-bottom:1px solid var(--line);}
+.ai-head .dot{width:44px; height:44px; border-radius:50%; overflow:hidden; padding:0;}
+.ai-head .dot img{width:100%; height:100%; object-fit:cover; border-radius:50%;}
+.ai-head h4{font-size:14px; font-weight:600;}
+.ai-head p{font-size:11px; color:var(--turquoise);}
+.ai-close{margin-left:auto; color:var(--grey); font-size:18px;}
+.ai-body{padding:20px; overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:14px;}
+.ai-msg{background:var(--black-3); padding:14px 16px; border-radius:14px; border-top-left-radius:4px; font-size:13.5px; line-height:1.5; max-width:88%; animation:fadein .4s var(--ease);}
+.ai-msg.user{align-self:flex-end; background:var(--blue); color:#fff; border-radius:14px; border-top-right-radius:4px;}
+@keyframes fadein{from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);}}
+.ai-options{display:flex; flex-wrap:wrap; gap:8px;}
+.ai-opt{padding:9px 14px; border:1px solid var(--line); border-radius:100px; font-size:12.5px; color:var(--white); transition:all .3s;}
+.ai-opt:hover{border-color:var(--turquoise); color:var(--turquoise);}
+.ai-footer{padding:16px 20px; border-top:1px solid var(--line);}
+.ai-wa{display:flex; align-items:center; justify-content:center; gap:10px; width:100%; background:#25D366; color:#04120a; padding:14px; border-radius:100px; font-size:13px; font-weight:600;}
+
+@media(max-width:900px){
+  .why-grid,.services-grid{grid-template-columns:1fr;}
+  .maint-grid{grid-template-columns:1fr;}
+  .maint-card{grid-template-columns:1fr;}
+  .maint-img{min-height:180px;}
+  .results-grid{grid-template-columns:1fr 1fr;}
+  .ceramic-grid,.map-shell,.calc-shell,.about-grid{grid-template-columns:1fr; gap:40px;}
+  .contact-methods{grid-template-columns:1fr;}
+  .calc-result{border-left:none; padding-left:0; border-top:1px solid var(--line); padding-top:30px;}
+  nav.links{display:none;}
+  .nav-toggle{display:flex;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .gallery{columns:2 160px;}
+  .hero-meta{position:static; align-items:flex-start; max-width:100%; margin-top:32px; right:auto;}
+  .hero-meta .area{white-space:normal;}
+  header{padding:16px 20px;}
+  header.scrolled{padding:12px 20px;}
+  .wrap{padding:0 20px;}
+  section{padding:90px 0;}
+  .hero{padding:120px 0 60px; min-height:94vh;}
+  .final-cta{padding:70px 30px;}
+  .cta-grid{grid-template-columns:1fr; gap:44px;}
+  .final-cta-content{text-align:center;}
+  .final-cta h2{margin-left:auto; margin-right:auto;}
+  .final-cta-sub{margin-left:auto; margin-right:auto;}
+  .final-cta-perks{align-items:center;}
+  .map-shell,.calc-shell{padding:32px 24px;}
+  .test-card{min-width:82vw;}
+}
+
+@media(max-width:640px){
+  .wrap{padding:0 18px;}
+  section{padding:70px 0;}
+  .hero{padding:110px 0 50px; min-height:96vh;}
+  .logo{font-size:17px; gap:8px;}
+  .logo-mark{width:32px; height:32px;}
+  header .logo-mark{width:44px; height:44px;}
+  .nav-right{gap:14px;}
+  .btn{padding:14px 24px; font-size:12px;}
+  .hero-cta{gap:12px;}
+  .hero-cta .btn{width:100%; justify-content:center;}
+  .hero h1{max-width:100%;}
+  .hero-subtitle{max-width:100%;}
+  .section-title{margin:14px 0 14px;}
+  .section-head{margin-bottom:44px; gap:20px;}
+  .why-card{padding:32px 26px; min-height:auto;}
+  .service-card{padding:30px 24px; min-height:190px;}
+  .results-grid{grid-template-columns:1fr 1fr;}
+  .result{padding:34px 16px;}
+  .footer-grid{grid-template-columns:1fr; gap:34px;}
+  .gallery{columns:2 140px; gap:10px;}
+  .about-stats{gap:26px;}
+  .ceramic-item{grid-template-columns:44px 1fr; gap:14px; padding:22px 0;}
+  .process-step{grid-template-columns:56px 1fr; gap:16px; padding:30px 0;}
+  .process-line{left:60px;}
+  .map-shell{padding:26px 20px;}
+  #realMap{height:240px !important;}
+  .calc-shell{padding:26px 20px; gap:30px;}
+  .calc-opt{padding:11px 16px; font-size:12.5px;}
+  .final-cta{padding:48px 18px; margin:0 16px; border-radius:22px;}
+  .final-cta h2{margin-bottom:16px;}
+  .cta-form{padding:26px 20px;}
+  .cf-row{grid-template-columns:1fr;}
+  .faq-q{font-size:16px; padding:22px 0;}
+  .test-card{min-width:86vw; padding:28px;}
+
+  /* AI chat as a mobile bottom sheet */
+  .ai-fab{width:68px; height:68px; bottom:18px; right:18px;}
+  .ai-tooltip{right:14px; bottom:84px; max-width:200px;}
+  .ai-panel{left:12px; right:12px; bottom:82px; width:auto; max-width:none; max-height:78vh; border-radius:20px;}
+  .ai-body{padding:16px;}
+  .ai-msg{font-size:14px; max-width:92%;}
+  .ba-shell{aspect-ratio:1/1.05;}
+  .ba-handle{width:42px; height:42px;}
+  .ai-opt{padding:11px 16px; font-size:13px;}
+  .ai-close{padding:10px; margin:-10px -6px -10px auto;}
+  .faq-q{padding-right:6px;}
+  .plan-modal{padding:0;}
+  .plan-modal-box{max-width:100%; max-height:100%; height:100%; border-radius:0;}
+  .plan-modal-img{height:180px;}
+  .plan-modal-content{padding:26px 22px 30px;}
+  .plan-modal-title{font-size:22px;}
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+<header id="header">
+  <div class="logo"><img class="logo-mark" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783039242/IMG_8388_ehbbac.jpg" alt="José Detailing">JOSÉ<span>·</span>DETAILING</div>
+  <nav class="links">
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#services" data-i18n="nav.services">Services</a>
+    <a href="#maintenance" data-i18n="nav.maintenance">Maintenance</a>
+    <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+    <a href="#areas" data-i18n="nav.areas">Areas</a>
+    <a href="#faq" data-i18n="nav.faq">FAQ</a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang-switch">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="es">ES</button>
+    </div>
+    <a href="#cta" class="btn btn-primary" style="padding:12px 22px;" data-i18n="nav.quote">Get Free Quote</a>
+    <div class="nav-toggle" id="navToggle" role="button" aria-label="Menu"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" data-i18n="nav.about">About</a>
+  <a href="#services" data-i18n="nav.services">Services</a>
+  <a href="#maintenance" data-i18n="nav.maintenance">Maintenance</a>
+  <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+  <a href="#areas" data-i18n="nav.areas">Areas</a>
+  <a href="#faq" data-i18n="nav.faq">FAQ</a>
+  <a href="#cta" class="btn btn-primary" data-i18n="nav.quote">Get Free Quote</a>
+</div>
+
+<section class="hero">
+  <div class="hero-media">
+    <video autoplay muted loop playsinline preload="auto" fetchpriority="high" poster="https://res.cloudinary.com/dgp7uhps3/video/upload/f_auto,q_auto,w_1280,so_0/v1783032686/insta_video_67864_j39rgv.jpg">
+      <source src="https://res.cloudinary.com/dgp7uhps3/video/upload/f_auto,q_auto:eco,w_1280/v1783032686/insta_video_67864_j39rgv.mp4" type="video/mp4">
+      <source src="https://res.cloudinary.com/dgp7uhps3/video/upload/v1783032686/insta_video_67864_j39rgv.mov" type="video/quicktime">
+    </video>
+  </div>
+  <div class="wrap hero-content">
+    <div class="eyebrow hero-eyebrow" data-i18n="hero.eyebrow">Riverside · Ontario · Anaheim, California</div>
+    <h1><span class="hero-shine" data-i18n="hero.title1">Protect Your</span><br><span class="italic" data-i18n="hero.title2">Investment.</span></h1>
+    <p class="hero-subtitle" data-i18n="hero.subtitle">Professional ceramic coatings and premium mobile detailing, brought directly to your driveway.</p>
+    <div class="hero-cta">
+      <a href="#cta" class="btn btn-primary" data-i18n="hero.cta1">Get Free Quote</a>
+      <a href="#before-after" class="btn btn-ghost" data-i18n="hero.cta2">Watch Transformations</a>
+    </div>
+  </div>
+  <div class="hero-meta">
+    <div class="area" data-i18n="hero.years">6+ Years Preserving Luxury Vehicles</div>
+    <div class="area" data-i18n="hero.mobile">Fully Mobile · We Come To You</div>
+  </div>
+  <div class="scroll-cue"><div class="scroll-line"></div><span data-i18n="hero.scroll">Scroll</span></div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <video class="about-video" poster="https://res.cloudinary.com/dgp7uhps3/video/upload/v1783032244/insta_video_7878_rvylxu.jpg" playsinline preload="metadata">
+          <source src="https://res.cloudinary.com/dgp7uhps3/video/upload/v1783032244/insta_video_7878_rvylxu.mp4" type="video/mp4">
+        </video>
+        <button class="about-play" type="button" aria-label="Play video">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+        <div class="about-tag" data-i18n="about.tag">Est. Riverside, CA</div>
+      </div>
+      <div class="about-content reveal">
+        <div class="eyebrow" data-i18n="about.eyebrow">Who We Are</div>
+        <h2 class="section-title" data-i18n="about.title">The story behind every finish.</h2>
+        <p data-i18n="about.p1">José Detailing started with a simple idea: your vehicle deserves the same care and precision you'd expect from a private collection. What began as one person, one driveway, and an obsession with perfect paint has grown into a trusted mobile detailing studio across Southern California.</p>
+        <p data-i18n="about.p2">Every job is treated the same way, whether it's a daily driver or a six-figure exotic — with certified products, disciplined technique, and an eye for the details most people never notice.</p>
+        <div class="about-stats">
+          <div><div class="about-stat-num">6+</div><div class="about-stat-label" data-i18n="about.stat1">Years of Experience</div></div>
+          <div><div class="about-stat-num">480+</div><div class="about-stat-label" data-i18n="about.stat2">Vehicles Detailed</div></div>
+          <div><div class="about-stat-num">5.0</div><div class="about-stat-label" data-i18n="about.stat3">Average Rating</div></div>
+        </div>
+        <a href="#cta" class="btn btn-primary" data-i18n="about.cta">Book Your Detail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow" data-i18n="services.eyebrow">Services</div>
+      <h2 class="section-title" data-i18n="services.title">Every detail, covered.</h2></div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" style="background-image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783036384/7abd10_903a7ebb72be46908026543f3a4a2a2d_mv2_t2t1yy.avif')"><div class="eyebrow" style="margin-bottom:0;">01</div><div><h4 data-i18n="services.s1.t">Interior Detailing</h4><p data-i18n="services.s1.p">Deep extraction, leather conditioning, and full sanitization.</p></div></div>
+      <div class="service-card" style="background-image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783036384/7abd10_6995ea22b4784c5c876b7e5438194457_mv2_qehp2y.avif')"><div class="eyebrow" style="margin-bottom:0;">02</div><div><h4 data-i18n="services.s2.t">Exterior Detail</h4><p data-i18n="services.s2.p">Hand wash, decontamination, and gloss-enhancing sealant.</p></div></div>
+      <div class="service-card" style="background-image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783036384/7abd10_15137d8156fb428588b15bed7f2880a0_mv2_tzmhj8.avif')"><div class="eyebrow" style="margin-bottom:0;">03</div><div><h4 data-i18n="services.s3.t">Ceramic Coating</h4><p data-i18n="services.s3.p">Multi-year nano-ceramic protection with a mirror finish.</p></div></div>
+      <div class="service-card" style="background-image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783036384/8680ee_85767fd6e0584d1785a3d7203357d01a_mv2_yfmkxy.avif')"><div class="eyebrow" style="margin-bottom:0;">04</div><div><h4 data-i18n="services.s4.t">Paint Correction</h4><p data-i18n="services.s4.p">Machine polishing to remove swirls, holograms, and light scratches.</p></div></div>
+      <div class="service-card" style="background-image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783036546/How-to-Clean-Engine-Bay-00_slp3tv.jpg')"><div class="eyebrow" style="margin-bottom:0;">05</div><div><h4 data-i18n="services.s5.t">Engine Bay</h4><p data-i18n="services.s5.p">Safe degreasing and dressing for a showroom-clean bay.</p></div></div>
+      <div class="service-card" style="background-image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783036384/8680ee_e0ec444d00c64787bd24b2c79561650f_mv2_ifwggj.avif')"><div class="eyebrow" style="margin-bottom:0;">06</div><div><h4 data-i18n="services.s6.t">Headlight Restoration</h4><p data-i18n="services.s6.p">Remove oxidation and restore clarity and brightness.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="before-after">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow" data-i18n="ba.eyebrow">Transformations</div>
+        <h2 class="section-title" data-i18n="ba.title">Drag to see the difference.</h2>
+      </div>
+      <p class="section-sub" data-i18n="ba.sub">Real correction and coating work — swipe across to compare before and after.</p>
+    </div>
+    <div class="ba-shell reveal" id="baShell">
+      <img class="ba-shell-img ba-before" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032170/IMG_8379_yua20q.jpg" alt="">
+      <img class="ba-shell-img ba-after" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032156/IMG_8380_zddsdz.jpg" alt="">
+      <div class="ba-tag before" data-i18n="ba.before">Before</div>
+      <div class="ba-tag after" data-i18n="ba.after">After</div>
+      <div class="ba-line"></div>
+      <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg></div>
+      <input type="range" class="ba-range" min="0" max="100" value="50" id="baRange">
+    </div>
+  </div>
+</section>
+
+<section id="maintenance" class="section-photo-bg" style="--bg-photo:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783036384/7abd10_f6e76e27b8af4aecb0fe8d77fb9ab706_mv2_degcvk.avif')">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow" data-i18n="maint.eyebrow">Membership Plans</div>
+      <h2 class="section-title" data-i18n="maint.title">Maintenance packages.</h2>
+      <p class="section-sub" data-i18n="maint.sub">Keep your vehicle in peak condition year-round with our scheduled maintenance plans.</p></div>
+    </div>
+    <div class="maint-grid">
+
+      <div class="maint-card reveal">
+        <div class="maint-img" style="background-image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032154/IMG_8382_aqq1rw.jpg')"></div>
+        <div class="maint-content">
+          <h4 data-i18n="maint.p1.t">Interior Maintenance Program</h4>
+          <p class="maint-desc" data-i18n="maint.p1.p">Keep your interior looking new all year long.</p>
+          <ul class="maint-list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p1.l1">Monthly interior cleaning</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p1.l2">Vacuum & steam cleaning</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p1.l3">Dashboard & trim detailing</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p1.l4">Flexible scheduling</span></li>
+          </ul>
+          <div class="maint-actions">
+            <a href="#" class="maint-btn" data-i18n="maint.cta" data-plan="p1" data-img="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032154/IMG_8382_aqq1rw.jpg">Read More</a>
+            <a href="#" class="maint-wa" target="_blank" rel="noopener" data-plan-key="maint.p1.t"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.8-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.4 5.4 4.7.8.3 1.4.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.1 14.7 3.6 13.4 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8-8.4 8z"/></svg><span data-i18n="maint.wa">WhatsApp</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="maint-card reveal">
+        <div class="maint-img" style="background-image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032185/IMG_8371_bdnxjz.jpg')"></div>
+        <div class="maint-content">
+          <h4 data-i18n="maint.p2.t">Exterior Maintenance Program</h4>
+          <p class="maint-desc" data-i18n="maint.p2.p">Keep that beautiful shine on your vehicle, every month.</p>
+          <ul class="maint-list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p2.l1">Monthly exterior wash</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p2.l2">Hand wash & dry</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p2.l3">Wheel & tire cleaning</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p2.l4">Spray wax application</span></li>
+          </ul>
+          <div class="maint-actions">
+            <a href="#" class="maint-btn" data-i18n="maint.cta" data-plan="p2" data-img="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032185/IMG_8371_bdnxjz.jpg">Read More</a>
+            <a href="#" class="maint-wa" target="_blank" rel="noopener" data-plan-key="maint.p2.t"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.8-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.4 5.4 4.7.8.3 1.4.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.1 14.7 3.6 13.4 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8-8.4 8z"/></svg><span data-i18n="maint.wa">WhatsApp</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="maint-card featured reveal">
+        <div class="maint-badge" data-i18n="maint.p3.badge">Most Popular</div>
+        <div class="maint-img" style="background-image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032168/IMG_8377_b2jboh.jpg')"></div>
+        <div class="maint-content">
+          <h4 data-i18n="maint.p3.t">Deluxe Maintenance Program</h4>
+          <p class="maint-desc" data-i18n="maint.p3.p">Your vehicle deserves complete interior and exterior care. Listen to your car.</p>
+          <ul class="maint-list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p3.l1">Full interior & exterior cleaning</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p3.l2">Engine bay treatment</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p3.l3">Leather & vinyl conditioning</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p3.l4">Priority scheduling</span></li>
+          </ul>
+          <div class="maint-actions">
+            <a href="#" class="maint-btn" data-i18n="maint.cta" data-plan="p3" data-img="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032168/IMG_8377_b2jboh.jpg">Read More</a>
+            <a href="#" class="maint-wa" target="_blank" rel="noopener" data-plan-key="maint.p3.t"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.8-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.4 5.4 4.7.8.3 1.4.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.1 14.7 3.6 13.4 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8-8.4 8z"/></svg><span data-i18n="maint.wa">WhatsApp</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="maint-card reveal">
+        <div class="maint-img" style="background-image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032151/IMG_8384_rrlg4s.jpg')"></div>
+        <div class="maint-content">
+          <h4 data-i18n="maint.p4.t">Seasonal Restoration Program</h4>
+          <p class="maint-desc" data-i18n="maint.p4.p">A quarterly renewal inside and out to restore shine, remove road salt, and prep your car for the next season.</p>
+          <ul class="maint-list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p4.l1">Quarterly full detail</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p4.l2">Seasonal protection treatments</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p4.l3">One complimentary add-on service</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="maint.p4.l4">15% off additional services</span></li>
+          </ul>
+          <div class="maint-actions">
+            <a href="#" class="maint-btn" data-i18n="maint.cta" data-plan="p4" data-img="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032151/IMG_8384_rrlg4s.jpg">Read More</a>
+            <a href="#" class="maint-wa" target="_blank" rel="noopener" data-plan-key="maint.p4.t"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.8-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.4 5.4 4.7.8.3 1.4.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.1 14.7 3.6 13.4 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8-8.4 8z"/></svg><span data-i18n="maint.wa">WhatsApp</span></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow" data-i18n="why.eyebrow">Why José Detailing</div>
+        <h2 class="section-title" data-i18n="why.title">Built for vehicles worth protecting.</h2>
+      </div>
+      <p class="section-sub" data-i18n="why.sub">We treat every vehicle like it belongs in a private collection — because to its owner, it does.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div><div class="why-num">01</div>
+        <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="#22d3c1" stroke-width="1.3"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z"/></svg></div>
+        <div><h3 data-i18n="why.c1.t">6+ Years Experience</h3><p data-i18n="why.c1.p">Hundreds of luxury and exotic vehicles preserved across Southern California.</p></div>
+      </div>
+      <div class="why-card reveal">
+        <div><div class="why-num">02</div>
+        <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="#22d3c1" stroke-width="1.3"><path d="M3 12l4-7h10l4 7-9 9-9-9z"/><circle cx="12" cy="12" r="2.4"/></svg></div>
+        <div><h3 data-i18n="why.c2.t">Mobile Service</h3><p data-i18n="why.c2.p">Studio-level detailing delivered to your home, office, or garage.</p></div>
+      </div>
+      <div class="why-card reveal">
+        <div><div class="why-num">03</div>
+        <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="#22d3c1" stroke-width="1.3"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
+        <div><h3 data-i18n="why.c3.t">Certified Products</h3><p data-i18n="why.c3.p">Industry-leading ceramic coatings and pH-balanced chemicals only.</p></div>
+      </div>
+      <div class="why-card reveal">
+        <div><div class="why-num">04</div>
+        <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="#22d3c1" stroke-width="1.3"><path d="M5 20l5-14 4 10 3-6 2 4"/></svg></div>
+        <div><h3 data-i18n="why.c4.t">Luxury Vehicles</h3><p data-i18n="why.c4.p">Trusted by owners of European and exotic marques across California.</p></div>
+      </div>
+      <div class="why-card reveal">
+        <div><div class="why-num">05</div>
+        <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="#22d3c1" stroke-width="1.3"><path d="M12 3c4 3 6 6 6 10a6 6 0 1 1-12 0c0-4 2-7 6-10z"/></svg></div>
+        <div><h3 data-i18n="why.c5.t">Paint Protection</h3><p data-i18n="why.c5.p">Multi-layer correction and coating systems built to last for years.</p></div>
+      </div>
+      <div class="why-card reveal">
+        <div><div class="why-num">06</div>
+        <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="#22d3c1" stroke-width="1.3"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <div><h3 data-i18n="why.c6.t">Premium Finish</h3><p data-i18n="why.c6.p">Showroom-grade results, every single time, guaranteed.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ceramic">
+  <div class="wrap">
+    <div class="ceramic-grid">
+      <div>
+        <div class="eyebrow" data-i18n="ceramic.eyebrow">Ceramic Coating</div>
+        <h2 class="section-title" style="max-width:460px;" data-i18n="ceramic.title">A permanent layer of protection.</h2>
+        <p class="section-sub" style="margin-bottom:36px;" data-i18n="ceramic.sub">Nano-ceramic technology bonds to your paint, creating a hydrophobic, UV-resistant shield that lasts for years — not weeks.</p>
+        <div class="ceramic-list">
+          <div class="ceramic-item"><div class="tag" data-i18n="ceramic.i1.tag">01</div><div><h4 data-i18n="ceramic.i1.t">What it is</h4><p data-i18n="ceramic.i1.p">A liquid polymer that chemically bonds with your factory paint at a molecular level.</p></div></div>
+          <div class="ceramic-item"><div class="tag" data-i18n="ceramic.i2.tag">02</div><div><h4 data-i18n="ceramic.i2.t">How it works</h4><p data-i18n="ceramic.i2.p">It cures into a hard, glass-like layer that repels water, dirt and contaminants.</p></div></div>
+          <div class="ceramic-item"><div class="tag" data-i18n="ceramic.i3.tag">03</div><div><h4 data-i18n="ceramic.i3.t">Duration</h4><p data-i18n="ceramic.i3.p">Professional-grade coatings last 2 to 5+ years with proper maintenance.</p></div></div>
+          <div class="ceramic-item"><div class="tag" data-i18n="ceramic.i4.tag">04</div><div><h4 data-i18n="ceramic.i4.t">Benefits</h4><p data-i18n="ceramic.i4.p">UV protection, chemical resistance, enhanced gloss, and dramatically easier washes.</p></div></div>
+        </div>
+      </div>
+      <div class="ceramic-visual reveal">
+        <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032180/IMG_8374_rckxpr.jpg" alt="Ceramic Coating">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow" data-i18n="process.eyebrow">Our Process</div>
+        <h2 class="section-title" data-i18n="process.title">Six steps. Zero shortcuts.</h2>
+      </div>
+    </div>
+    <div class="process-track" id="processTrack">
+      <div class="process-step reveal"><div class="pnum"><div class="dot"></div>01</div><div><h4 data-i18n="process.s1.t">Inspection</h4><p data-i18n="process.s1.p">We assess paint condition, swirls, and problem areas before touching a panel.</p></div></div>
+      <div class="process-step reveal"><div class="pnum"><div class="dot"></div>02</div><div><h4 data-i18n="process.s2.t">Deep Wash</h4><p data-i18n="process.s2.p">Two-bucket foam wash to safely lift dirt without introducing new scratches.</p></div></div>
+      <div class="process-step reveal"><div class="pnum"><div class="dot"></div>03</div><div><h4 data-i18n="process.s3.t">Paint Decontamination</h4><p data-i18n="process.s3.p">Clay bar and iron removal strip embedded contaminants from the clear coat.</p></div></div>
+      <div class="process-step reveal"><div class="pnum"><div class="dot"></div>04</div><div><h4 data-i18n="process.s4.t">Paint Correction</h4><p data-i18n="process.s4.p">Machine polishing removes swirls and restores true depth and gloss.</p></div></div>
+      <div class="process-step reveal"><div class="pnum"><div class="dot"></div>05</div><div><h4 data-i18n="process.s5.t">Ceramic Coating</h4><p data-i18n="process.s5.p">Nano-ceramic layers are hand-applied and cured under controlled conditions.</p></div></div>
+      <div class="process-step reveal"><div class="pnum"><div class="dot"></div>06</div><div><h4 data-i18n="process.s6.t">Final Inspection</h4><p data-i18n="process.s6.p">A panel-by-panel walk-through under LED light before handoff.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <div class="results-grid">
+      <div class="result reveal"><div class="num" data-count="6">0<span>+</span></div><div class="label" data-i18n="results.r1">Years Experience</div></div>
+      <div class="result reveal"><div class="num" data-count="480">0<span>+</span></div><div class="label" data-i18n="results.r2">Cars Detailed</div></div>
+      <div class="result reveal"><div class="num" data-count="5">0<span>.0</span></div><div class="label" data-i18n="results.r3">Star Reviews</div></div>
+      <div class="result reveal"><div class="num" data-count="210">0<span>+</span></div><div class="label" data-i18n="results.r4">Ceramic Installs</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow" data-i18n="test.eyebrow">Client Stories</div>
+      <h2 class="section-title" data-i18n="test.title">Trusted with what matters to them.</h2></div>
+    </div>
+    <div class="test-scroll">
+      <div class="test-card"><div class="stars">★★★★★</div><p class="test-quote" data-i18n="test.q1">"José treated my car like it was his own. The ceramic coating still beads water perfectly two years later."</p>
+        <div class="test-person"><img class="test-avatar" src="https://picsum.photos/seed/client1/100/100"><div><div class="test-name">Michael R.</div><div class="test-car" data-i18n="test.c1">Porsche 911 · Riverside</div></div></div></div>
+      <div class="test-card"><div class="stars">★★★★★</div><p class="test-quote" data-i18n="test.q2">"Mobile service that actually feels premium. Zero mess, incredible attention to detail."</p>
+        <div class="test-person"><img class="test-avatar" src="https://picsum.photos/seed/client2/100/100"><div><div class="test-name">Sarah L.</div><div class="test-car" data-i18n="test.c2">Range Rover · Anaheim</div></div></div></div>
+      <div class="test-card"><div class="stars">★★★★★</div><p class="test-quote" data-i18n="test.q3">"The paint correction was flawless. Swirls I thought were permanent are completely gone."</p>
+        <div class="test-person"><img class="test-avatar" src="https://picsum.photos/seed/client3/100/100"><div><div class="test-name">Daniel P.</div><div class="test-car" data-i18n="test.c3">BMW M4 · Ontario</div></div></div></div>
+      <div class="test-card"><div class="stars">★★★★★</div><p class="test-quote" data-i18n="test.q4">"Professional, punctual, and the results speak for themselves. Worth every dollar."</p>
+        <div class="test-person"><img class="test-avatar" src="https://picsum.photos/seed/client4/100/100"><div><div class="test-name">Elena V.</div><div class="test-car" data-i18n="test.c4">Tesla Model S · Riverside</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow" data-i18n="contact.eyebrow">Contact</div>
+      <h2 class="section-title" data-i18n="contact.title">Talk to us directly.</h2>
+      <p class="section-sub" data-i18n="contact.sub">Reach out through any channel below, or check our coverage area and get in touch.</p></div>
+    </div>
+    <div class="contact-methods">
+      <a class="contact-card" href="https://wa.me/16264269575" target="_blank" rel="noopener">
+        <div class="contact-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.8-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.4 5.4 4.7.8.3 1.4.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.1 14.7 3.6 13.4 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8-8.4 8z"/></svg></div>
+        <div><h4 data-i18n="contact.wa">WhatsApp</h4><p>+1 (626) 426-9575</p></div>
+      </a>
+      <a class="contact-card" href="tel:+16264269575">
+        <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <div><h4 data-i18n="contact.phone">Call Us</h4><p>(626) 426-9575</p></div>
+      </a>
+      <a class="contact-card" href="#" target="_blank" rel="noopener">
+        <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></div>
+        <div><h4 data-i18n="contact.instagram">Instagram</h4><p data-i18n="contact.instagramSub">@josedetailing</p></div>
+      </a>
+    </div>
+    <div class="map-shell reveal">
+      <div class="map-list">
+        <div class="eyebrow" data-i18n="map.eyebrow">Service Areas</div>
+        <h2 style="font-size:32px; margin:14px 0 26px;" data-i18n="map.title">Wherever your car is, we come to you.</h2>
+        <div class="map-city"><div class="map-dot"></div><div><h4>Riverside</h4><p data-i18n="map.r">Full mobile coverage</p></div></div>
+        <div class="map-city"><div class="map-dot"></div><div><h4>Ontario</h4><p data-i18n="map.o">Full mobile coverage</p></div></div>
+        <div class="map-city"><div class="map-dot"></div><div><h4>Anaheim</h4><p data-i18n="map.a">Full mobile coverage</p></div></div>
+      </div>
+      <div id="realMap" class="map-svg" style="height:340px; border-radius:16px; overflow:hidden;"></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow" data-i18n="gallery.eyebrow">Gallery</div>
+      <h2 class="section-title" data-i18n="gallery.title">Recent work.</h2></div>
+    </div>
+    <div class="gallery">
+      <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032186/IMG_8372_gdsn4l.jpg" loading="lazy">
+      <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032168/IMG_8377_b2jboh.jpg" loading="lazy">
+      <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032175/IMG_8376_d4oyas.jpg" loading="lazy">
+      <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032180/IMG_8373_wkaj0t.jpg" loading="lazy">
+      <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032180/IMG_8374_rckxpr.jpg" loading="lazy">
+      <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032183/IMG_8375_k0pvhl.jpg" loading="lazy">
+      <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032185/IMG_8371_bdnxjz.jpg" loading="lazy">
+      <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032165/IMG_8378_irp6kl.jpg" loading="lazy">
+      <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032189/IMG_8370_wcjivo.jpg" loading="lazy">
+      <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032193/IMG_8368_zalysl.jpg" loading="lazy">
+      <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032193/IMG_8369_eex0rt.jpg" loading="lazy">
+      <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032198/IMG_8367_z2ysjl.jpg" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="calculator">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow" data-i18n="calc.eyebrow">Estimate</div>
+      <h2 class="section-title" data-i18n="calc.title">Get a quick estimate.</h2></div>
+    </div>
+    <div class="calc-shell reveal">
+      <div>
+        <div class="calc-field">
+          <label data-i18n="calc.vtype">Vehicle Type</label>
+          <div class="calc-options" data-group="vehicle">
+            <div class="calc-opt active" data-value="120" data-i18n="calc.sedan">Sedan</div>
+            <div class="calc-opt" data-value="150" data-i18n="calc.suv">SUV</div>
+            <div class="calc-opt" data-value="170" data-i18n="calc.truck">Truck</div>
+            <div class="calc-opt" data-value="220" data-i18n="calc.exotic">Exotic</div>
+          </div>
+        </div>
+        <div class="calc-field">
+          <label data-i18n="calc.condition">Paint Condition</label>
+          <div class="calc-options" data-group="condition">
+            <div class="calc-opt active" data-value="0" data-i18n="calc.good">Good</div>
+            <div class="calc-opt" data-value="35" data-i18n="calc.fair">Fair</div>
+            <div class="calc-opt" data-value="80" data-i18n="calc.poor">Poor</div>
+          </div>
+        </div>
+        <div class="calc-field">
+          <label data-i18n="calc.services">Services</label>
+          <div class="calc-options" data-group="services" data-multi="1">
+            <div class="calc-opt" data-value="60" data-i18n="calc.interior">Interior Detailing</div>
+            <div class="calc-opt" data-value="70" data-i18n="calc.exterior">Exterior Detail</div>
+            <div class="calc-opt" data-value="250" data-i18n="calc.coating">Ceramic Coating</div>
+            <div class="calc-opt" data-value="120" data-i18n="calc.correction">Paint Correction</div>
+          </div>
+        </div>
+      </div>
+      <div class="calc-result">
+        <div class="eyebrow" data-i18n="calc.estimate">Estimated Total</div>
+        <div class="calc-price">$<span id="calcPrice">120</span></div>
+        <p class="calc-note" data-i18n="calc.note">This is an approximate range. Final pricing is confirmed after a quick vehicle inspection.</p>
+        <a href="#cta" class="btn btn-primary" style="margin-top:24px;" data-i18n="calc.cta">Request Exact Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section-photo-bg" style="--bg-photo:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032185/IMG_8371_bdnxjz.jpg')">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow" data-i18n="faq.eyebrow">FAQ</div>
+      <h2 class="section-title" data-i18n="faq.title">Common questions.</h2></div>
+    </div>
+    <div id="faqList">
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q1">How long does ceramic coating last?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="faq.a1">Depending on the package and maintenance routine, our coatings last between 2 and 5+ years.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q2">Do you really come to my location?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="faq.a2">Yes — we're fully mobile across Riverside, Ontario and Anaheim, bringing water, power and equipment.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q3">How long does a full detail take?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="faq.a3">Most full details take 3 to 6 hours; ceramic coating packages can take a full day.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q4">Do you work with exotic and luxury cars?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="faq.a4">Absolutely — the majority of our clients own European and exotic vehicles.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="final-cta">
+    <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783036384/7abd10_903a7ebb72be46908026543f3a4a2a2d_mv2_t2t1yy.avif" alt="">
+    <div class="cta-grid">
+      <div class="final-cta-content">
+        <div class="eyebrow" data-i18n="cta.eyebrow">Ready When You Are</div>
+        <h2 data-i18n="cta.title">Your vehicle deserves better.</h2>
+        <p class="final-cta-sub" data-i18n="cta.sub">Fill out the form and we'll confirm your appointment directly on WhatsApp — no waiting, no back and forth.</p>
+        <div class="final-cta-perks">
+          <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="cta.perk1">100% mobile — we come to you</span></div>
+          <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="cta.perk2">Response within minutes on WhatsApp</span></div>
+          <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="cta.perk3">No obligation, free estimate</span></div>
+        </div>
+      </div>
+      <form class="cta-form" id="ctaForm">
+        <div class="cta-form-title" data-i18n="cta.formTitle">Request Your Detail</div>
+        <div class="cta-form-note" data-i18n="cta.formNote">Tell us about your vehicle and we'll send you a quote.</div>
+
+        <div class="cf-row">
+          <div class="cf-field">
+            <label data-i18n="cta.f.name">Full Name</label>
+            <input type="text" class="cf-input" id="cfName" data-i18n-placeholder="cta.f.namePh" placeholder="Your name" required>
+          </div>
+          <div class="cf-field">
+            <label data-i18n="cta.f.phone">Phone</label>
+            <input type="tel" class="cf-input" id="cfPhone" data-i18n-placeholder="cta.f.phonePh" placeholder="(626) 000-0000" required>
+          </div>
+        </div>
+
+        <div class="cf-field">
+          <label data-i18n="cta.f.email">Email</label>
+          <input type="email" class="cf-input" id="cfEmail" data-i18n-placeholder="cta.f.emailPh" placeholder="you@email.com">
+        </div>
+
+        <div class="cf-row">
+          <div class="cf-field">
+            <label data-i18n="cta.f.vehicle">Vehicle Type</label>
+            <select class="cf-select" id="cfVehicle">
+              <option value="" data-i18n="cta.f.vehiclePh">Select vehicle type</option>
+              <option data-i18n="calc.sedan">Sedan</option>
+              <option data-i18n="calc.suv">SUV</option>
+              <option data-i18n="calc.truck">Truck</option>
+              <option data-i18n="calc.exotic">Exotic</option>
+            </select>
+          </div>
+          <div class="cf-field">
+            <label data-i18n="cta.f.service">Service</label>
+            <select class="cf-select" id="cfService">
+              <option value="" data-i18n="cta.f.servicePh">Select a service</option>
+              <option data-i18n="calc.interior">Interior Detailing</option>
+              <option data-i18n="calc.exterior">Exterior Detail</option>
+              <option data-i18n="calc.coating">Ceramic Coating</option>
+              <option data-i18n="calc.correction">Paint Correction</option>
+              <option data-i18n="maint.p1.t">Interior Maintenance Program</option>
+              <option data-i18n="maint.p2.t">Exterior Maintenance Program</option>
+              <option data-i18n="maint.p3.t">Deluxe Maintenance Program</option>
+              <option data-i18n="maint.p4.t">Seasonal Restoration Program</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="cf-field">
+          <label data-i18n="cta.f.message">Message (optional)</label>
+          <textarea class="cf-textarea" id="cfMessage" data-i18n-placeholder="cta.f.messagePh" placeholder="Anything we should know about your vehicle or schedule?"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary cf-submit" data-i18n="cta.f.submit">Send via WhatsApp</button>
+        <div class="cf-status" id="cfStatus"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom:16px;"><img class="logo-mark" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783039242/IMG_8388_ehbbac.jpg" alt="José Detailing">JOSÉ<span>·</span>DETAILING</div>
+        <p data-i18n="footer.tagline">Luxury mobile detailing and ceramic coatings across California.</p>
+      </div>
+      <div class="footer-col"><h5 data-i18n="footer.explore">Explore</h5>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#ceramic" data-i18n="nav.ceramic">Ceramic Coating</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+      </div>
+      <div class="footer-col"><h5 data-i18n="footer.areas">Service Areas</h5>
+        <p>Riverside</p><p>Ontario</p><p>Anaheim</p>
+      </div>
+      <div class="footer-col"><h5 data-i18n="footer.contact">Contact</h5>
+        <a href="https://wa.me/16264269575" target="_blank">WhatsApp</a>
+        <a href="#">Instagram</a>
+        <a href="tel:+16264269575">(626) 426-9575</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 José Detailing. <span data-i18n="footer.rights">All rights reserved.</span></span>
+      <span data-i18n="footer.madewith">Mobile detailing & ceramic coatings, California.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="plan-modal" id="planModal">
+  <div class="plan-modal-overlay" id="planModalOverlay"></div>
+  <div class="plan-modal-box">
+    <button class="plan-modal-close" id="planModalClose" aria-label="Close">✕</button>
+    <div class="plan-modal-img" id="planModalImg"></div>
+    <div class="plan-modal-content">
+      <div class="plan-modal-badge" id="planModalBadge" style="display:none;"></div>
+      <h3 class="plan-modal-title" id="planModalTitle"></h3>
+      <p class="plan-modal-desc" id="planModalDesc"></p>
+      <ul class="plan-modal-list" id="planModalList"></ul>
+      <div class="plan-modal-actions">
+        <a href="#cta" class="btn btn-primary" id="planModalCta" data-i18n="maint.cta2">Request This Plan</a>
+        <a href="#" class="maint-wa" id="planModalWa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.8-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.4 5.4 4.7.8.3 1.4.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.1 14.7 3.6 13.4 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8-8.4 8z"/></svg><span data-i18n="maint.wa">WhatsApp</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ai-fab" id="aiFab" role="button" aria-label="José AI Advisor"><img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783039242/IMG_8388_ehbbac.jpg" alt="José Detailing"></div>
+<div class="ai-tooltip" id="aiTooltip">
+  <span class="ai-tooltip-close" id="aiTooltipClose">✕</span>
+  <p data-i18n="ai.tooltip">Hey! I'm José's AI Advisor — I'm here to help if you have any questions.</p>
+</div>
+<div class="ai-panel" id="aiPanel">
+  <div class="ai-head"><div class="dot"><img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783039242/IMG_8388_ehbbac.jpg" alt="José Detailing"></div>
+    <div><h4 data-i18n="ai.title">José AI Advisor</h4><p data-i18n="ai.status">● Online now</p></div>
+    <span class="ai-close" id="aiClose">✕</span>
+  </div>
+  <div class="ai-body" id="aiBody"></div>
+  <div class="ai-footer" id="aiFooter" style="display:none;">
+    <a class="ai-wa" id="aiWaLink" target="_blank" data-i18n="ai.continueWa">Continue on WhatsApp</a>
+  </div>
+</div>
+
+<script>
+/* ---------- i18n ---------- */
+const translations = {
+en:{
+"nav.about":"About","nav.services":"Services","nav.maintenance":"Available Plans","nav.ceramic":"Ceramic Coating","nav.gallery":"Gallery","nav.areas":"Contact","nav.faq":"FAQ","nav.quote":"Get Free Quote",
+"about.eyebrow":"Who We Are","about.title":"The story behind every finish.","about.tag":"Est. Riverside, CA",
+"about.p1":"José Detailing started with a simple idea: your vehicle deserves the same care and precision you'd expect from a private collection. What began as one person, one driveway, and an obsession with perfect paint has grown into a trusted mobile detailing studio across Southern California.",
+"about.p2":"Every job is treated the same way, whether it's a daily driver or a six-figure exotic — with certified products, disciplined technique, and an eye for the details most people never notice.",
+"about.stat1":"Years of Experience","about.stat2":"Vehicles Detailed","about.stat3":"Average Rating","about.cta":"Book Your Detail",
+"meta.title":"José Detailing — Luxury Mobile Detailing & Ceramic Coatings","meta.description":"Luxury mobile detailing and ceramic coatings in Riverside, Ontario and Anaheim, California.",
+"hero.eyebrow":"Riverside · Ontario · Anaheim, California","hero.title1":"Protect Your","hero.title2":"Investment.",
+"hero.subtitle":"Professional ceramic coatings and premium mobile detailing, brought directly to your driveway.",
+"hero.cta1":"Get Free Quote","hero.cta2":"Watch Transformations","hero.years":"6+ Years Preserving Luxury Vehicles","hero.mobile":"Fully Mobile · We Come To You","hero.scroll":"Scroll",
+"why.eyebrow":"Why José Detailing","why.title":"Built for vehicles worth protecting.","why.sub":"We treat every vehicle like it belongs in a private collection — because to its owner, it does.",
+"why.c1.t":"6+ Years Experience","why.c1.p":"Hundreds of luxury and exotic vehicles preserved across Southern California.",
+"why.c2.t":"Mobile Service","why.c2.p":"Studio-level detailing delivered to your home, office, or garage.",
+"why.c3.t":"Certified Products","why.c3.p":"Industry-leading ceramic coatings and pH-balanced chemicals only.",
+"why.c4.t":"Luxury Vehicles","why.c4.p":"Trusted by owners of European and exotic marques across California.",
+"why.c5.t":"Paint Protection","why.c5.p":"Multi-layer correction and coating systems built to last for years.",
+"why.c6.t":"Premium Finish","why.c6.p":"Showroom-grade results, every single time, guaranteed.",
+"ba.eyebrow":"Transformations","ba.title":"Drag to see the difference.","ba.sub":"Real correction and coating work — swipe across to compare before and after.","ba.before":"Before","ba.after":"After",
+"ceramic.eyebrow":"Ceramic Coating","ceramic.title":"A permanent layer of protection.","ceramic.sub":"Nano-ceramic technology bonds to your paint, creating a hydrophobic, UV-resistant shield that lasts for years — not weeks.",
+"ceramic.i1.tag":"01","ceramic.i1.t":"What it is","ceramic.i1.p":"A liquid polymer that chemically bonds with your factory paint at a molecular level.",
+"ceramic.i2.tag":"02","ceramic.i2.t":"How it works","ceramic.i2.p":"It cures into a hard, glass-like layer that repels water, dirt and contaminants.",
+"ceramic.i3.tag":"03","ceramic.i3.t":"Duration","ceramic.i3.p":"Professional-grade coatings last 2 to 5+ years with proper maintenance.",
+"ceramic.i4.tag":"04","ceramic.i4.t":"Benefits","ceramic.i4.p":"UV protection, chemical resistance, enhanced gloss, and dramatically easier washes.",
+"process.eyebrow":"Our Process","process.title":"Six steps. Zero shortcuts.",
+"process.s1.t":"Inspection","process.s1.p":"We assess paint condition, swirls, and problem areas before touching a panel.",
+"process.s2.t":"Deep Wash","process.s2.p":"Two-bucket foam wash to safely lift dirt without introducing new scratches.",
+"process.s3.t":"Paint Decontamination","process.s3.p":"Clay bar and iron removal strip embedded contaminants from the clear coat.",
+"process.s4.t":"Paint Correction","process.s4.p":"Machine polishing removes swirls and restores true depth and gloss.",
+"process.s5.t":"Ceramic Coating","process.s5.p":"Nano-ceramic layers are hand-applied and cured under controlled conditions.",
+"process.s6.t":"Final Inspection","process.s6.p":"A panel-by-panel walk-through under LED light before handoff.",
+"results.r1":"Years Experience","results.r2":"Cars Detailed","results.r3":"Star Reviews","results.r4":"Ceramic Installs",
+"test.eyebrow":"Client Stories","test.title":"Trusted with what matters to them.",
+"test.q1":"\"José treated my car like it was his own. The ceramic coating still beads water perfectly two years later.\"","test.c1":"Porsche 911 · Riverside",
+"test.q2":"\"Mobile service that actually feels premium. Zero mess, incredible attention to detail.\"","test.c2":"Range Rover · Anaheim",
+"test.q3":"\"The paint correction was flawless. Swirls I thought were permanent are completely gone.\"","test.c3":"BMW M4 · Ontario",
+"test.q4":"\"Professional, punctual, and the results speak for themselves. Worth every dollar.\"","test.c4":"Tesla Model S · Riverside",
+"map.eyebrow":"Service Areas","map.title":"Wherever your car is, we come to you.","map.r":"Full mobile coverage","map.o":"Full mobile coverage","map.a":"Full mobile coverage",
+"contact.eyebrow":"Contact","contact.title":"Talk to us directly.","contact.sub":"Reach out through any channel below, or check our coverage area and get in touch.",
+"contact.wa":"WhatsApp","contact.phone":"Call Us","contact.instagram":"Instagram","contact.instagramSub":"@josedetailing",
+"gallery.eyebrow":"Gallery","gallery.title":"Recent work.",
+"services.eyebrow":"Services","services.title":"Every detail, covered.",
+"services.s1.t":"Interior Detailing","services.s1.p":"Deep extraction, leather conditioning, and full sanitization.",
+"services.s2.t":"Exterior Detail","services.s2.p":"Hand wash, decontamination, and gloss-enhancing sealant.",
+"services.s3.t":"Ceramic Coating","services.s3.p":"Multi-year nano-ceramic protection with a mirror finish.",
+"services.s4.t":"Paint Correction","services.s4.p":"Machine polishing to remove swirls, holograms, and light scratches.",
+"services.s5.t":"Engine Bay","services.s5.p":"Safe degreasing and dressing for a showroom-clean bay.",
+"services.s6.t":"Headlight Restoration","services.s6.p":"Remove oxidation and restore clarity and brightness.",
+"maint.eyebrow":"Membership Plans","maint.title":"Maintenance packages.","maint.sub":"Keep your vehicle in peak condition year-round with our scheduled maintenance plans.","maint.cta":"Read More","maint.cta2":"Request This Plan","maint.wa":"WhatsApp","maint.waMessage":"Hi! I'd like more info about the {plan}.",
+"maint.p1.t":"Interior Maintenance Program","maint.p1.p":"Keep your interior looking new all year long.","maint.p1.long":"Designed for daily drivers and family vehicles that see regular use, this program keeps the cabin fresh, sanitized, and free of wear. Each visit includes a full vacuum, steam-cleaned upholstery, conditioned leather and trim, and a deep sanitization pass — so your interior always feels like day one.","maint.p1.l1":"Monthly interior cleaning","maint.p1.l2":"Vacuum & steam cleaning","maint.p1.l3":"Dashboard & trim detailing","maint.p1.l4":"Flexible scheduling",
+"maint.p2.t":"Exterior Maintenance Program","maint.p2.p":"Keep that beautiful shine on your vehicle, every month.","maint.p2.long":"Built for owners who want their paint protected and looking sharp between full details. Every visit includes a careful hand wash, wheel and tire decontamination, and a spray wax application that maintains gloss and adds a layer of protection against the elements.","maint.p2.l1":"Monthly exterior wash","maint.p2.l2":"Hand wash & dry","maint.p2.l3":"Wheel & tire cleaning","maint.p2.l4":"Spray wax application",
+"maint.p3.badge":"Most Popular","maint.p3.t":"Deluxe Maintenance Program","maint.p3.p":"Your vehicle deserves complete interior and exterior care. Listen to your car.","maint.p3.long":"Our most complete maintenance plan, combining full interior and exterior care in a single scheduled visit. Includes engine bay treatment, leather and vinyl conditioning, and priority scheduling — the same standard we use on our luxury and exotic clients, applied consistently, month after month.","maint.p3.l1":"Full interior & exterior cleaning","maint.p3.l2":"Engine bay treatment","maint.p3.l3":"Leather & vinyl conditioning","maint.p3.l4":"Priority scheduling",
+"maint.p4.t":"Seasonal Restoration Program","maint.p4.p":"A quarterly renewal inside and out to restore shine, remove road salt, and prep your car for the next season.","maint.p4.long":"Perfect for vehicles that face seasonal wear — road salt, sun exposure, or heavy use. Every quarter, we deliver a full detail plus a seasonal protection treatment, and you get one complimentary add-on service of your choice, along with 15% off any additional services during your visit.","maint.p4.l1":"Quarterly full detail","maint.p4.l2":"Seasonal protection treatments","maint.p4.l3":"One complimentary add-on service","maint.p4.l4":"15% off additional services",
+"calc.eyebrow":"Estimate","calc.title":"Get a quick estimate.","calc.vtype":"Vehicle Type","calc.sedan":"Sedan","calc.suv":"SUV","calc.truck":"Truck","calc.exotic":"Exotic",
+"calc.condition":"Paint Condition","calc.good":"Good","calc.fair":"Fair","calc.poor":"Poor",
+"calc.services":"Services","calc.interior":"Interior Detailing","calc.exterior":"Exterior Detail","calc.coating":"Ceramic Coating","calc.correction":"Paint Correction",
+"calc.estimate":"Estimated Total","calc.note":"This is an approximate range. Final pricing is confirmed after a quick vehicle inspection.","calc.cta":"Request Exact Quote",
+"faq.eyebrow":"FAQ","faq.title":"Common questions.",
+"faq.q1":"How long does ceramic coating last?","faq.a1":"Depending on the package and maintenance routine, our coatings last between 2 and 5+ years.",
+"faq.q2":"Do you really come to my location?","faq.a2":"Yes — we're fully mobile across Riverside, Ontario and Anaheim, bringing water, power and equipment.",
+"faq.q3":"How long does a full detail take?","faq.a3":"Most full details take 3 to 6 hours; ceramic coating packages can take a full day.",
+"faq.q4":"Do you work with exotic and luxury cars?","faq.a4":"Absolutely — the majority of our clients own European and exotic vehicles.",
+"cta.eyebrow":"Ready When You Are","cta.title":"Your vehicle deserves better.","cta.button":"Book Your Detail",
+"cta.sub":"Fill out the form and we'll confirm your appointment directly on WhatsApp — no waiting, no back and forth.",
+"cta.perk1":"100% mobile — we come to you","cta.perk2":"Response within minutes on WhatsApp","cta.perk3":"No obligation, free estimate",
+"cta.formTitle":"Request Your Detail","cta.formNote":"Tell us about your vehicle and we'll send you a quote.",
+"cta.f.name":"Full Name","cta.f.namePh":"Your name","cta.f.phone":"Phone","cta.f.phonePh":"(626) 000-0000",
+"cta.f.email":"Email","cta.f.emailPh":"you@email.com",
+"cta.f.vehicle":"Vehicle Type","cta.f.vehiclePh":"Select vehicle type",
+"cta.f.service":"Service","cta.f.servicePh":"Select a service",
+"cta.f.message":"Message (optional)","cta.f.messagePh":"Anything we should know about your vehicle or schedule?",
+"cta.f.submit":"Send via WhatsApp",
+"cta.f.errName":"Please enter your name.","cta.f.errPhone":"Please enter a valid phone number.","cta.f.sending":"Opening WhatsApp…",
+"footer.tagline":"Luxury mobile detailing and ceramic coatings across California.","footer.explore":"Explore","footer.areas":"Service Areas","footer.contact":"Contact","footer.rights":"All rights reserved.","footer.madewith":"Mobile detailing & ceramic coatings, California.",
+"ai.fabLabel":"José AI Advisor","ai.title":"José AI Advisor","ai.status":"● Online now","ai.continueWa":"Continue on WhatsApp","ai.tooltip":"Hey! I'm José's AI Advisor — I'm here to help if you have any questions.",
+"ai.greet":"Hi, I'm José's AI Advisor. I can help figure out exactly what your vehicle needs — mind if I ask a few quick questions?",
+"ai.start":"Sure, let's go","ai.q_make":"What are we working with today?","ai.opt_sedan":"Sedan / Coupe","ai.opt_suv":"SUV / Truck","ai.opt_exotic":"Exotic / Luxury",
+"ai.q_condition":"How's the paint looking these days?","ai.opt_good":"Pretty good","ai.opt_swirls":"Swirls & light scratches","ai.opt_rough":"Rough, needs correction",
+"ai.q_outside":"Does it sleep outside or in a garage?","ai.opt_outside":"Outside","ai.opt_garage":"Garage",
+"ai.q_coating":"Any ceramic coating on it currently?","ai.opt_yes":"Yes","ai.opt_no":"No, never coated",
+"ai.q_goal":"What's the main goal here?","ai.opt_protect":"Long-term protection","ai.opt_sell":"Getting ready to sell","ai.opt_refresh":"Just needs a refresh",
+"ai.summary":"Perfect — based on that, I'd recommend a paint correction + ceramic coating package. Let's get you an exact quote from José directly on WhatsApp.",
+"ai.waMessage":"Hi José! I used the AI Advisor on your site. Vehicle type: {vehicle}. Paint condition: {condition}. Parking: {parking}. Current coating: {coating}. Goal: {goal}. Could you send me a quote?"
+},
+es:{
+"nav.about":"Nosotros","nav.services":"Servicios","nav.maintenance":"Planes disponibles","nav.ceramic":"Ceramic Coating","nav.gallery":"Galería","nav.areas":"Contacto","nav.faq":"Preguntas Frecuentes","nav.quote":"Cotización Gratis",
+"about.eyebrow":"Quiénes Somos","about.title":"La historia detrás de cada terminación.","about.tag":"Fundado en Riverside, CA",
+"about.p1":"José Detailing arrancó con una idea simple: tu vehículo se merece el mismo cuidado y precisión que esperarías para una colección privada. Lo que empezó como una sola persona, una sola cochera y una obsesión con la pintura perfecta, se convirtió en un estudio de detailing móvil de confianza en todo el sur de California.",
+"about.p2":"Tratamos cada trabajo de la misma manera, ya sea un auto de uso diario o un exótico de seis cifras — con productos certificados, técnica disciplinada y un ojo para los detalles que la mayoría ni siquiera nota.",
+"about.stat1":"Años de Experiencia","about.stat2":"Vehículos Detallados","about.stat3":"Calificación Promedio","about.cta":"Reservá Tu Detailing",
+"meta.title":"José Detailing — Mobile Detailing de Lujo y Ceramic Coatings","meta.description":"Mobile detailing de lujo y ceramic coatings en Riverside, Ontario y Anaheim, California.",
+"hero.eyebrow":"Riverside · Ontario · Anaheim, California","hero.title1":"Protegé Tu","hero.title2":"Inversión.",
+"hero.subtitle":"Ceramic coatings profesionales y mobile detailing premium, directo hasta tu casa.",
+"hero.cta1":"Cotización Gratis","hero.cta2":"Ver Transformaciones","hero.years":"6+ Años Preservando Vehículos de Lujo","hero.mobile":"100% Mobile · Vamos Hasta Vos","hero.scroll":"Scroll",
+"why.eyebrow":"Por Qué José Detailing","why.title":"Pensado para autos que vale la pena proteger.","why.sub":"Tratamos cada vehículo como si perteneciera a una colección privada — porque para su dueño, lo es.",
+"why.c1.t":"6+ Años de Experiencia","why.c1.p":"Cientos de vehículos de lujo y exóticos preservados en el sur de California.",
+"why.c2.t":"Servicio Mobile","why.c2.p":"Detailing de nivel estudio, entregado en tu casa, oficina o garage.",
+"why.c3.t":"Productos Certificados","why.c3.p":"Solo ceramic coatings líderes de la industria y químicos con pH balanceado.",
+"why.c4.t":"Vehículos de Lujo","why.c4.p":"La confianza de dueños de marcas europeas y exóticas en toda California.",
+"why.c5.t":"Protección de Pintura","why.c5.p":"Sistemas de corrección y coating multicapa hechos para durar años.",
+"why.c6.t":"Terminación Premium","why.c6.p":"Resultados nivel showroom, siempre, garantizado.",
+"ba.eyebrow":"Transformaciones","ba.title":"Arrastrá para ver la diferencia.","ba.sub":"Trabajo real de corrección y coating — deslizá para comparar el antes y el después.","ba.before":"Antes","ba.after":"Después",
+"ceramic.eyebrow":"Ceramic Coating","ceramic.title":"Una capa permanente de protección.","ceramic.sub":"La tecnología nano-cerámica se une a tu pintura, creando un escudo hidrofóbico y resistente a los UV que dura años — no semanas.",
+"ceramic.i1.tag":"01","ceramic.i1.t":"Qué es","ceramic.i1.p":"Un polímero líquido que se une químicamente con la pintura de fábrica a nivel molecular.",
+"ceramic.i2.tag":"02","ceramic.i2.t":"Cómo funciona","ceramic.i2.p":"Se cura formando una capa dura, tipo vidrio, que repele agua, tierra y contaminantes.",
+"ceramic.i3.tag":"03","ceramic.i3.t":"Duración","ceramic.i3.p":"Los coatings profesionales duran entre 2 y 5+ años con el mantenimiento adecuado.",
+"ceramic.i4.tag":"04","ceramic.i4.t":"Beneficios","ceramic.i4.p":"Protección UV, resistencia química, brillo mejorado y lavados muchísimo más fáciles.",
+"process.eyebrow":"Nuestro Proceso","process.title":"Seis pasos. Cero atajos.",
+"process.s1.t":"Inspección","process.s1.p":"Evaluamos el estado de la pintura, marcas y zonas problemáticas antes de tocar un panel.",
+"process.s2.t":"Lavado Profundo","process.s2.p":"Lavado con espuma y dos baldes para levantar la suciedad sin generar nuevos rayones.",
+"process.s3.t":"Descontaminación","process.s3.p":"Clay bar y remoción de partículas de hierro incrustadas en el clear coat.",
+"process.s4.t":"Corrección de Pintura","process.s4.p":"Pulido a máquina que elimina marcas de remolino y devuelve profundidad y brillo real.",
+"process.s5.t":"Ceramic Coating","process.s5.p":"Capas nano-cerámicas aplicadas a mano y curadas en condiciones controladas.",
+"process.s6.t":"Inspección Final","process.s6.p":"Revisión panel por panel bajo luz LED antes de la entrega.",
+"results.r1":"Años de Experiencia","results.r2":"Autos Detallados","results.r3":"Reseñas 5 Estrellas","results.r4":"Coatings Instalados",
+"test.eyebrow":"Clientes","test.title":"La confianza de quienes más cuidan lo suyo.",
+"test.q1":"\"José trató mi auto como si fuera propio. El ceramic coating sigue repeliendo agua perfecto después de dos años.\"","test.c1":"Porsche 911 · Riverside",
+"test.q2":"\"Servicio mobile que realmente se siente premium. Cero desorden, atención al detalle increíble.\"","test.c2":"Range Rover · Anaheim",
+"test.q3":"\"La corrección de pintura quedó impecable. Marcas que pensé que eran permanentes, desaparecieron.\"","test.c3":"BMW M4 · Ontario",
+"test.q4":"\"Profesional, puntual, y los resultados hablan solos. Vale cada dólar.\"","test.c4":"Tesla Model S · Riverside",
+"map.eyebrow":"Zonas de Cobertura","map.title":"Donde esté tu auto, ahí vamos nosotros.","map.r":"Cobertura mobile completa","map.o":"Cobertura mobile completa","map.a":"Cobertura mobile completa",
+"contact.eyebrow":"Contacto","contact.title":"Hablemos directamente.","contact.sub":"Contactanos por cualquiera de estos medios, o revisá nuestra zona de cobertura.",
+"contact.wa":"WhatsApp","contact.phone":"Llamanos","contact.instagram":"Instagram","contact.instagramSub":"@josedetailing",
+"gallery.eyebrow":"Galería","gallery.title":"Trabajos recientes.",
+"services.eyebrow":"Servicios","services.title":"Cada detalle, cubierto.",
+"services.s1.t":"Detailing de Interior","services.s1.p":"Extracción profunda, acondicionado de cuero y sanitización completa.",
+"services.s2.t":"Detailing de Exterior","services.s2.p":"Lavado a mano, descontaminación y sellador para más brillo.",
+"services.s3.t":"Ceramic Coating","services.s3.p":"Protección nano-cerámica de varios años con terminación espejo.",
+"services.s4.t":"Corrección de Pintura","services.s4.p":"Pulido a máquina para eliminar marcas de remolino y rayones leves.",
+"services.s5.t":"Compartimento del Motor","services.s5.p":"Desengrasado seguro y acabado para un motor nivel showroom.",
+"services.s6.t":"Restauración de Faros","services.s6.p":"Elimina la oxidación y devuelve claridad y brillo.",
+"maint.eyebrow":"Planes de Membresía","maint.title":"Paquetes de mantenimiento.","maint.sub":"Mantené tu vehículo en las mejores condiciones durante todo el año con nuestros planes de mantenimiento programado.","maint.cta":"Leer Más","maint.cta2":"Solicitar Este Plan","maint.wa":"WhatsApp","maint.waMessage":"¡Hola! Quiero más información sobre el {plan}.",
+"maint.p1.t":"Programa de Mantenimiento de Interior","maint.p1.p":"Mantené el interior de tu vehículo como nuevo durante todo el año.","maint.p1.long":"Pensado para vehículos de uso diario y familiar, este programa mantiene el interior fresco, higienizado y libre de desgaste. Cada visita incluye aspirado completo, limpieza a vapor de la tapicería, acondicionado de cuero y molduras, y una desinfección profunda — para que tu interior se sienta como el primer día.","maint.p1.l1":"Limpieza interior mensual","maint.p1.l2":"Aspirado y limpieza a vapor","maint.p1.l3":"Detallado de tablero y molduras","maint.p1.l4":"Horarios flexibles",
+"maint.p2.t":"Programa de Mantenimiento de Exterior","maint.p2.p":"Mantené ese hermoso brillo en tu vehículo, todos los meses.","maint.p2.long":"Ideal para quienes quieren la pintura protegida y con brillo entre detalles completos. Cada visita incluye un lavado a mano cuidadoso, descontaminación de llantas y neumáticos, y aplicación de cera en spray que mantiene el brillo y suma una capa de protección contra los elementos.","maint.p2.l1":"Lavado exterior mensual","maint.p2.l2":"Lavado a mano y secado","maint.p2.l3":"Limpieza de llantas y neumáticos","maint.p2.l4":"Aplicación de cera en spray",
+"maint.p3.badge":"Más Elegido","maint.p3.t":"Programa de Mantenimiento Deluxe","maint.p3.p":"Tu vehículo merece un cuidado completo, por dentro y por fuera. Escuchá a tu auto.","maint.p3.long":"Nuestro plan de mantenimiento más completo, que combina cuidado integral interior y exterior en una sola visita programada. Incluye tratamiento del compartimento del motor, acondicionamiento de cuero y vinilo, y programación prioritaria — el mismo estándar que usamos con nuestros clientes de vehículos de lujo y exóticos, aplicado mes a mes.","maint.p3.l1":"Limpieza integral interior y exterior","maint.p3.l2":"Tratamiento del compartimento del motor","maint.p3.l3":"Acondicionamiento de cuero y vinilo","maint.p3.l4":"Programación prioritaria",
+"maint.p4.t":"Programa de Restauración Estacional","maint.p4.p":"Una renovación trimestral por dentro y por fuera para restaurar el brillo, eliminar la sal y preparar tu auto para la próxima temporada.","maint.p4.long":"Perfecto para vehículos que enfrentan desgaste estacional — sal de la ruta, exposición al sol o uso intenso. Cada trimestre realizamos un detallado completo más un tratamiento de protección estacional, e incluye un servicio adicional gratuito a elección, además de 15% de descuento en cualquier servicio extra durante la visita.","maint.p4.l1":"Detallado completo trimestral","maint.p4.l2":"Tratamientos de protección estacional","maint.p4.l3":"Un servicio adicional gratuito","maint.p4.l4":"15% de descuento en servicios adicionales",
+"calc.eyebrow":"Estimación","calc.title":"Obtené una estimación rápida.","calc.vtype":"Tipo de Vehículo","calc.sedan":"Sedán","calc.suv":"SUV","calc.truck":"Camioneta","calc.exotic":"Exótico",
+"calc.condition":"Estado de la Pintura","calc.good":"Buena","calc.fair":"Regular","calc.poor":"Mala",
+"calc.services":"Servicios","calc.interior":"Detailing de Interior","calc.exterior":"Detailing de Exterior","calc.coating":"Ceramic Coating","calc.correction":"Corrección de Pintura",
+"calc.estimate":"Total Estimado","calc.note":"Esto es un rango aproximado. El precio final se confirma tras una breve inspección del vehículo.","calc.cta":"Pedir Cotización Exacta",
+"faq.eyebrow":"Preguntas","faq.title":"Preguntas frecuentes.",
+"faq.q1":"¿Cuánto dura el ceramic coating?","faq.a1":"Según el paquete y el mantenimiento, nuestros coatings duran entre 2 y 5+ años.",
+"faq.q2":"¿En serio van hasta mi ubicación?","faq.a2":"Sí — somos 100% mobile en Riverside, Ontario y Anaheim, llevamos agua, energía y equipamiento.",
+"faq.q3":"¿Cuánto dura un detailing completo?","faq.a3":"La mayoría de los detailing completos toman entre 3 y 6 horas; los paquetes de ceramic coating pueden llevar un día completo.",
+"faq.q4":"¿Trabajan con autos exóticos y de lujo?","faq.a4":"Por supuesto — la mayoría de nuestros clientes tienen vehículos europeos y exóticos.",
+"cta.eyebrow":"Cuando Vos Quieras","cta.title":"Tu vehículo merece algo mejor.","cta.button":"Reservá Tu Detailing",
+"cta.sub":"Completá el formulario y te confirmamos el turno directo por WhatsApp — sin esperas ni idas y vueltas.",
+"cta.perk1":"100% móvil — vamos hasta vos","cta.perk2":"Respuesta en minutos por WhatsApp","cta.perk3":"Sin compromiso, presupuesto gratis",
+"cta.formTitle":"Solicitá Tu Detailing","cta.formNote":"Contanos sobre tu vehículo y te enviamos una cotización.",
+"cta.f.name":"Nombre Completo","cta.f.namePh":"Tu nombre","cta.f.phone":"Teléfono","cta.f.phonePh":"(626) 000-0000",
+"cta.f.email":"Email","cta.f.emailPh":"tu@email.com",
+"cta.f.vehicle":"Tipo de Vehículo","cta.f.vehiclePh":"Elegí el tipo de vehículo",
+"cta.f.service":"Servicio","cta.f.servicePh":"Elegí un servicio",
+"cta.f.message":"Mensaje (opcional)","cta.f.messagePh":"¿Algo que debamos saber sobre tu vehículo o tu horario?",
+"cta.f.submit":"Enviar por WhatsApp",
+"cta.f.errName":"Ingresá tu nombre.","cta.f.errPhone":"Ingresá un teléfono válido.","cta.f.sending":"Abriendo WhatsApp…",
+"footer.tagline":"Mobile detailing de lujo y ceramic coatings en toda California.","footer.explore":"Explorar","footer.areas":"Zonas de Cobertura","footer.contact":"Contacto","footer.rights":"Todos los derechos reservados.","footer.madewith":"Mobile detailing y ceramic coatings, California.",
+"ai.fabLabel":"José AI Advisor","ai.title":"José AI Advisor","ai.status":"● En línea","ai.continueWa":"Continuar en WhatsApp","ai.tooltip":"¡Hola! Soy el asesor IA de José — estoy para ayudarte si tenés alguna duda.",
+"ai.greet":"Hola, soy el AI Advisor de José. Puedo ayudarte a definir exactamente qué necesita tu auto — ¿te hago un par de preguntas rápidas?",
+"ai.start":"Dale, empecemos","ai.q_make":"¿Con qué estamos trabajando hoy?","ai.opt_sedan":"Sedán / Coupé","ai.opt_suv":"SUV / Camioneta","ai.opt_exotic":"Exótico / Lujo",
+"ai.q_condition":"¿Cómo está la pintura hoy en día?","ai.opt_good":"Bastante bien","ai.opt_swirls":"Marcas y rayones leves","ai.opt_rough":"Mal, necesita corrección",
+"ai.q_outside":"¿Duerme afuera o en garage?","ai.opt_outside":"Afuera","ai.opt_garage":"Garage",
+"ai.q_coating":"¿Tiene ceramic coating actualmente?","ai.opt_yes":"Sí","ai.opt_no":"No, nunca tuvo",
+"ai.q_goal":"¿Cuál es el objetivo principal?","ai.opt_protect":"Protección a largo plazo","ai.opt_sell":"Preparándolo para vender","ai.opt_refresh":"Solo necesita un refresh",
+"ai.summary":"Perfecto — con esa info, te recomendaría un paquete de corrección de pintura + ceramic coating. Te paso directo con José por WhatsApp para la cotización exacta.",
+"ai.waMessage":"¡Hola José! Usé el AI Advisor de tu web. Tipo de vehículo: {vehicle}. Estado de pintura: {condition}. Estacionamiento: {parking}. Coating actual: {coating}. Objetivo: {goal}. ¿Me pasás una cotización?"
+}
+};
+let currentLang = localStorage.getItem('jd_lang') || (navigator.language.startsWith('es') ? 'es' : 'en');
+const MAINT_WA_NUMBER = "16264269575";
+
+function updateMaintWaLinks(){
+  document.querySelectorAll('.maint-wa[data-plan-key]').forEach(a=>{
+    const planKey = a.getAttribute('data-plan-key');
+    const planName = (translations[currentLang] && translations[currentLang][planKey]) || '';
+    const template = translations[currentLang]['maint.waMessage'] || 'Hi! I\'d like more info about the {plan}.';
+    const msg = template.replace('{plan}', planName);
+    a.href = `https://wa.me/${MAINT_WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+  });
+}
+
+function applyTranslations(){
+  document.documentElement.lang = currentLang;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    const val = translations[currentLang][key];
+    if(val !== undefined) el.textContent = val;
+  });
+  document.querySelectorAll('[data-i18n-meta]').forEach(el=>{
+    const key = el.getAttribute('data-i18n-meta');
+    const val = translations[currentLang][key];
+    if(val === undefined) return;
+    if(el.tagName === 'TITLE') el.textContent = val;
+    else el.setAttribute('content', val);
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{
+    const key = el.getAttribute('data-i18n-placeholder');
+    const val = translations[currentLang][key];
+    if(val !== undefined) el.setAttribute('placeholder', val);
+  });
+  document.querySelectorAll('.lang-switch button').forEach(b=>{
+    b.classList.toggle('active', b.dataset.lang === currentLang);
+  });
+  updateMaintWaLinks();
+}
+document.querySelectorAll('.lang-switch button').forEach(b=>{
+  b.addEventListener('click', ()=>{
+    currentLang = b.dataset.lang;
+    localStorage.setItem('jd_lang', currentLang);
+    applyTranslations();
+    aiReset();
+    closePlanModal();
+  });
+});
+applyTranslations();
+
+/* ---------- booking form ---------- */
+const ctaForm = document.getElementById('ctaForm');
+if(ctaForm){
+  ctaForm.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    const t = translations[currentLang];
+    const name = document.getElementById('cfName').value.trim();
+    const phone = document.getElementById('cfPhone').value.trim();
+    const email = document.getElementById('cfEmail').value.trim();
+    const vehicle = document.getElementById('cfVehicle').value;
+    const service = document.getElementById('cfService').value;
+    const message = document.getElementById('cfMessage').value.trim();
+    const status = document.getElementById('cfStatus');
+
+    if(!name){ status.textContent = t['cta.f.errName']; document.getElementById('cfName').focus(); return; }
+    if(!phone || phone.replace(/\D/g,'').length < 7){ status.textContent = t['cta.f.errPhone']; document.getElementById('cfPhone').focus(); return; }
+
+    status.textContent = t['cta.f.sending'];
+
+    let lines = [`¡Hola! Quiero solicitar un detailing.`, `Nombre: ${name}`, `Teléfono: ${phone}`];
+    if(email) lines.push(`Email: ${email}`);
+    if(vehicle) lines.push(`Vehículo: ${vehicle}`);
+    if(service) lines.push(`Servicio: ${service}`);
+    if(message) lines.push(`Mensaje: ${message}`);
+    const waMessage = lines.join('\n');
+
+    window.open(`https://wa.me/${MAINT_WA_NUMBER}?text=${encodeURIComponent(waMessage)}`, '_blank');
+    setTimeout(()=>{ status.textContent = ''; }, 4000);
+  });
+}
+
+/* ---------- header scroll ---------- */
+const header = document.getElementById('header');
+window.addEventListener('scroll', ()=> header.classList.toggle('scrolled', window.scrollY > 40));
+
+/* ---------- mobile menu ---------- */
+const navToggle = document.getElementById('navToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+function closeMobileMenu(){
+  navToggle.classList.remove('open');
+  mobileMenu.classList.remove('open');
+  document.body.classList.remove('menu-open');
+}
+navToggle.addEventListener('click', ()=>{
+  const isOpen = mobileMenu.classList.toggle('open');
+  navToggle.classList.toggle('open', isOpen);
+  document.body.classList.toggle('menu-open', isOpen);
+});
+mobileMenu.querySelectorAll('a').forEach(a=> a.addEventListener('click', closeMobileMenu));
+
+/* ---------- plan details modal ---------- */
+const planModal = document.getElementById('planModal');
+const planModalOverlay = document.getElementById('planModalOverlay');
+const planModalClose = document.getElementById('planModalClose');
+const planModalImg = document.getElementById('planModalImg');
+const planModalBadge = document.getElementById('planModalBadge');
+const planModalTitle = document.getElementById('planModalTitle');
+const planModalDesc = document.getElementById('planModalDesc');
+const planModalList = document.getElementById('planModalList');
+const planModalWa = document.getElementById('planModalWa');
+const checkSvg = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>';
+
+function openPlanModal(btn){
+  const plan = btn.dataset.plan;
+  const img = btn.dataset.img;
+  const tr = translations[currentLang];
+  planModalImg.style.backgroundImage = `url('${img}')`;
+  planModalTitle.textContent = tr[`maint.${plan}.t`] || '';
+  planModalDesc.textContent = tr[`maint.${plan}.long`] || tr[`maint.${plan}.p`] || '';
+  planModalList.innerHTML = '';
+  ['l1','l2','l3','l4'].forEach(l=>{
+    const val = tr[`maint.${plan}.${l}`];
+    if(val){
+      const li = document.createElement('li');
+      li.innerHTML = checkSvg + '<span>' + val + '</span>';
+      planModalList.appendChild(li);
+    }
+  });
+  const badgeKey = `maint.${plan}.badge`;
+  if(tr[badgeKey]){
+    planModalBadge.textContent = tr[badgeKey];
+    planModalBadge.style.display = 'inline-block';
+  } else {
+    planModalBadge.style.display = 'none';
+  }
+  const planName = tr[`maint.${plan}.t`] || '';
+  const msg = (tr['maint.waMessage'] || '').replace('{plan}', planName);
+  planModalWa.href = `https://wa.me/${MAINT_WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+  planModal.classList.add('open');
+  document.body.classList.add('modal-open');
+}
+function closePlanModal(){
+  planModal.classList.remove('open');
+  document.body.classList.remove('modal-open');
+}
+document.querySelectorAll('.maint-btn[data-plan]').forEach(btn=>{
+  btn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    openPlanModal(btn);
+  });
+});
+planModalClose.addEventListener('click', closePlanModal);
+planModalOverlay.addEventListener('click', closePlanModal);
+document.getElementById('planModalCta').addEventListener('click', closePlanModal);
+document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closePlanModal(); });
+
+/* ---------- real coverage map ---------- */
+(function(){
+  const mapEl = document.getElementById('realMap');
+  if(!mapEl || typeof L === 'undefined') return;
+  const cities = [
+    { name:'Riverside', lat:33.9806, lng:-117.3755 },
+    { name:'Ontario',   lat:34.0633, lng:-117.6509 },
+    { name:'Anaheim',   lat:33.8366, lng:-117.9143 }
+  ];
+  const map = L.map(mapEl, { scrollWheelZoom:false, zoomControl:true, attributionControl:true }).setView([33.96, -117.65], 9);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap &copy; CARTO',
+    subdomains: 'abcd', maxZoom: 19
+  }).addTo(map);
+  const icon = L.divIcon({ className:'map-marker-pin', iconSize:[16,16] });
+  const bounds = [];
+  cities.forEach(c=>{
+    L.marker([c.lat, c.lng], { icon }).addTo(map).bindPopup(c.name);
+    bounds.push([c.lat, c.lng]);
+  });
+  map.fitBounds(bounds, { padding:[40,40] });
+})();
+
+(function(){
+  const heroVideo = document.querySelector('.hero-media video');
+  if(!heroVideo) return;
+  const tryPlay = ()=> heroVideo.play().catch(()=>{});
+  tryPlay();
+  ['click','touchstart','scroll'].forEach(evt=>{
+    document.addEventListener(evt, tryPlay, { once:true, passive:true });
+  });
+})();
+
+
+/* ---------- reveal on scroll ---------- */
+const revealEls = document.querySelectorAll('.reveal, .why-card, .process-step, .result, .layer');
+revealEls.forEach(el=>{ if(!el.classList.contains('reveal')) el.classList.add('reveal'); });
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); } });
+}, {threshold:.2});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ---------- counters ---------- */
+const counters = document.querySelectorAll('.num[data-count]');
+const cio = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const el = e.target;
+      const target = parseInt(el.dataset.count,10);
+      const suffixEl = el.querySelector('span');
+      let cur = 0;
+      const step = Math.max(1, Math.round(target/60));
+      const timer = setInterval(()=>{
+        cur += step;
+        if(cur >= target){ cur = target; clearInterval(timer); }
+        el.childNodes[0].nodeValue = cur;
+      }, 25);
+      cio.unobserve(el);
+    }
+  });
+},{threshold:.5});
+counters.forEach(el=>cio.observe(el));
+
+/* ---------- about video ---------- */
+const aboutVisual = document.querySelector('.about-visual');
+if(aboutVisual){
+  const aboutVideo = aboutVisual.querySelector('.about-video');
+  aboutVisual.addEventListener('click', ()=>{
+    if(aboutVideo.paused){ aboutVideo.play(); } else { aboutVideo.pause(); }
+  });
+  aboutVideo.addEventListener('play', ()=> aboutVisual.classList.add('playing'));
+  aboutVideo.addEventListener('pause', ()=> aboutVisual.classList.remove('playing'));
+  aboutVideo.addEventListener('ended', ()=>{ aboutVideo.currentTime = 0; aboutVisual.classList.remove('playing'); });
+}
+
+/* ---------- before/after slider ---------- */
+const baShell = document.getElementById('baShell');
+const baRange = document.getElementById('baRange');
+baRange.addEventListener('input', ()=> baShell.style.setProperty('--ba', baRange.value + '%'));
+
+/* ---------- faq ---------- */
+document.querySelectorAll('.faq-item').forEach(item=>{
+  const q = item.querySelector('.faq-q');
+  const a = item.querySelector('.faq-a');
+  q.addEventListener('click', ()=>{
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>{ i.classList.remove('open'); i.querySelector('.faq-a').style.maxHeight = null; });
+    if(!isOpen){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+  });
+});
+
+/* ---------- calculator ---------- */
+const calcGroups = document.querySelectorAll('.calc-options');
+function calcTotal(){
+  let total = 0;
+  calcGroups.forEach(g=>{
+    const multi = g.dataset.multi;
+    const active = g.querySelectorAll('.calc-opt.active');
+    active.forEach(a=> total += parseInt(a.dataset.value,10));
+  });
+  document.getElementById('calcPrice').textContent = total;
+}
+calcGroups.forEach(g=>{
+  const multi = g.dataset.multi;
+  g.querySelectorAll('.calc-opt').forEach(opt=>{
+    opt.addEventListener('click', ()=>{
+      if(multi){ opt.classList.toggle('active'); }
+      else{ g.querySelectorAll('.calc-opt').forEach(o=>o.classList.remove('active')); opt.classList.add('active'); }
+      calcTotal();
+    });
+  });
+});
+calcTotal();
+
+/* ---------- AI advisor ---------- */
+const aiFab = document.getElementById('aiFab');
+const aiPanel = document.getElementById('aiPanel');
+const aiClose = document.getElementById('aiClose');
+const aiBody = document.getElementById('aiBody');
+const aiFooter = document.getElementById('aiFooter');
+const aiWaLink = document.getElementById('aiWaLink');
+const WHATSAPP_NUMBER = "16264269575";
+
+let aiState = {};
+function t(key){ return translations[currentLang][key]; }
+
+function aiMsg(text, isUser){
+  const div = document.createElement('div');
+  div.className = 'ai-msg' + (isUser ? ' user' : '');
+  div.textContent = text;
+  aiBody.appendChild(div);
+  aiBody.scrollTop = aiBody.scrollHeight;
+}
+function aiOptions(opts, onPick){
+  const wrap = document.createElement('div');
+  wrap.className = 'ai-options';
+  opts.forEach(o=>{
+    const b = document.createElement('div');
+    b.className = 'ai-opt';
+    b.textContent = t(o.labelKey);
+    b.addEventListener('click', ()=>{
+      wrap.remove();
+      aiMsg(t(o.labelKey), true);
+      onPick(o);
+    });
+    wrap.appendChild(b);
+  });
+  aiBody.appendChild(wrap);
+  aiBody.scrollTop = aiBody.scrollHeight;
+}
+
+function aiReset(){
+  aiBody.innerHTML = '';
+  aiFooter.style.display = 'none';
+  aiState = {};
+  setTimeout(()=>{
+    aiMsg(t('ai.greet'));
+    setTimeout(()=>{
+      aiOptions([{labelKey:'ai.start'}], ()=> aiStepVehicle());
+    }, 400);
+  }, 300);
+}
+function aiStepVehicle(){
+  aiMsg(t('ai.q_make'));
+  aiOptions([
+    {labelKey:'ai.opt_sedan', val:'Sedan/Coupe'},
+    {labelKey:'ai.opt_suv', val:'SUV/Truck'},
+    {labelKey:'ai.opt_exotic', val:'Exotic/Luxury'},
+  ], (o)=>{ aiState.vehicle = t(o.labelKey); aiStepCondition(); });
+}
+function aiStepCondition(){
+  aiMsg(t('ai.q_condition'));
+  aiOptions([
+    {labelKey:'ai.opt_good'}, {labelKey:'ai.opt_swirls'}, {labelKey:'ai.opt_rough'}
+  ], (o)=>{ aiState.condition = t(o.labelKey); aiStepParking(); });
+}
+function aiStepParking(){
+  aiMsg(t('ai.q_outside'));
+  aiOptions([
+    {labelKey:'ai.opt_outside'}, {labelKey:'ai.opt_garage'}
+  ], (o)=>{ aiState.parking = t(o.labelKey); aiStepCoating(); });
+}
+function aiStepCoating(){
+  aiMsg(t('ai.q_coating'));
+  aiOptions([
+    {labelKey:'ai.opt_yes'}, {labelKey:'ai.opt_no'}
+  ], (o)=>{ aiState.coating = t(o.labelKey); aiStepGoal(); });
+}
+function aiStepGoal(){
+  aiMsg(t('ai.q_goal'));
+  aiOptions([
+    {labelKey:'ai.opt_protect'}, {labelKey:'ai.opt_sell'}, {labelKey:'ai.opt_refresh'}
+  ], (o)=>{ aiState.goal = t(o.labelKey); aiFinish(); });
+}
+function aiFinish(){
+  setTimeout(()=>{
+    aiMsg(t('ai.summary'));
+    const msg = t('ai.waMessage')
+      .replace('{vehicle}', aiState.vehicle)
+      .replace('{condition}', aiState.condition)
+      .replace('{parking}', aiState.parking)
+      .replace('{coating}', aiState.coating)
+      .replace('{goal}', aiState.goal);
+    aiWaLink.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+    aiFooter.style.display = 'block';
+  }, 300);
+}
+aiFab.addEventListener('click', ()=>{
+  aiPanel.classList.add('open');
+  if(!aiBody.hasChildNodes()) aiReset();
+  hideAiTooltip();
+});
+aiClose.addEventListener('click', ()=> aiPanel.classList.remove('open'));
+
+/* ---------- ai tooltip (40s) ---------- */
+const aiTooltip = document.getElementById('aiTooltip');
+const aiTooltipClose = document.getElementById('aiTooltipClose');
+function hideAiTooltip(){ aiTooltip.classList.remove('show'); }
+const aiTooltipTimer = setTimeout(()=>{
+  if(!aiPanel.classList.contains('open')) aiTooltip.classList.add('show');
+}, 40000);
+aiTooltipClose.addEventListener('click', (e)=>{ e.stopPropagation(); clearTimeout(aiTooltipTimer); hideAiTooltip(); });
+aiTooltip.addEventListener('click', ()=>{ aiFab.click(); });
+</script>
+</body>
+</html>
