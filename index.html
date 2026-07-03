@@ -121,8 +121,6 @@ body.menu-open{overflow:hidden;}
 @keyframes shine{0%{background-position:200% 0;}100%{background-position:-40% 0;}}
 .hero-subtitle{margin-top:26px; font-size:18px; color:var(--grey); max-width:480px; line-height:1.6;}
 .hero-cta{display:flex; gap:18px; margin-top:44px; flex-wrap:wrap;}
-.hero-meta{position:absolute; right:32px; bottom:90px; z-index:3; display:flex; flex-direction:column; gap:10px; align-items:flex-end; max-width:60vw;}
-.hero-meta .area{font-family:var(--font-body); font-size:12.5px; font-weight:500; color:var(--white); letter-spacing:.02em; background:rgba(5,6,8,.5); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,.14); padding:10px 18px; border-radius:100px; white-space:nowrap;}
 .scroll-cue{position:absolute; left:40px; bottom:36px; z-index:3; display:flex; align-items:center; gap:10px; font-family:var(--font-mono); font-size:11px; color:var(--grey); letter-spacing:.1em; text-transform:uppercase;}
 .scroll-line{width:1px; height:40px; background:linear-gradient(var(--turquoise), transparent); animation:scrolldown 2s ease-in-out infinite;}
 @keyframes scrolldown{0%{transform:scaleY(0); transform-origin:top;}50%{transform:scaleY(1); transform-origin:top;}50.01%{transform-origin:bottom;}100%{transform:scaleY(0); transform-origin:bottom;}}
@@ -393,7 +391,7 @@ footer{padding:80px 0 40px; border-top:1px solid var(--line);}
 .footer-col a:hover{color:var(--turquoise);}
 .footer-bottom{display:flex; justify-content:space-between; padding-top:30px; border-top:1px solid var(--line); font-size:12px; color:var(--grey-dim); flex-wrap:wrap; gap:10px;}
 
-/* AI ADVISOR */
+/* JOSÉ DETAIL CONCIERGE */
 .ai-fab{position:fixed; bottom:28px; right:28px; z-index:600; width:80px; height:80px; border-radius:50%; cursor:pointer; transition:transform .4s var(--ease);}
 .ai-fab:hover{transform:translateY(-4px) scale(1.05);}
 .ai-fab img{width:100%; height:100%; border-radius:50%; object-fit:cover; display:block; position:relative; z-index:2; box-shadow:0 20px 50px -12px rgba(0,0,0,.6); border:2px solid var(--black-2);}
@@ -406,23 +404,44 @@ footer{padding:80px 0 40px; border-top:1px solid var(--line);}
 .ai-tooltip::after{content:""; position:absolute; bottom:-7px; right:36px; width:14px; height:14px; background:var(--black-2); border-right:1px solid var(--line); border-bottom:1px solid var(--line); transform:rotate(45deg);}
 .ai-tooltip-close{position:absolute; top:10px; right:12px; font-size:12px; color:var(--grey); cursor:pointer; line-height:1;}
 .ai-tooltip-close:hover{color:var(--turquoise);}
-.ai-panel{position:fixed; bottom:100px; right:28px; width:380px; max-width:88vw; background:var(--black-2); border:1px solid var(--line); border-radius:22px; z-index:601; box-shadow:0 30px 80px -20px rgba(0,0,0,.7); display:flex; flex-direction:column; max-height:70vh; opacity:0; pointer-events:none; transform:translateY(20px) scale(.97); transition:all .4s var(--ease);}
+.ai-panel{position:fixed; bottom:100px; right:28px; width:400px; max-width:90vw; background:rgba(16,18,23,.68); backdrop-filter:blur(28px) saturate(160%); -webkit-backdrop-filter:blur(28px) saturate(160%); border:1px solid rgba(255,255,255,.1); border-radius:26px; z-index:601; box-shadow:0 40px 100px -20px rgba(0,0,0,.75), inset 0 1px 0 rgba(255,255,255,.06); display:flex; flex-direction:column; max-height:74vh; opacity:0; pointer-events:none; transform:translateY(20px) scale(.97); transition:all .4s var(--ease);}
 .ai-panel.open{opacity:1; pointer-events:all; transform:translateY(0) scale(1);}
-.ai-head{display:flex; align-items:center; gap:12px; padding:20px; border-bottom:1px solid var(--line);}
-.ai-head .dot{width:44px; height:44px; border-radius:50%; overflow:hidden; padding:0;}
+.ai-head{display:flex; align-items:center; gap:12px; padding:20px 20px 16px; border-bottom:1px solid rgba(255,255,255,.08);}
+.ai-head .dot{width:44px; height:44px; border-radius:50%; overflow:hidden; padding:0; flex-shrink:0;}
 .ai-head .dot img{width:100%; height:100%; object-fit:cover; border-radius:50%;}
-.ai-head h4{font-size:14px; font-weight:600;}
-.ai-head p{font-size:11px; color:var(--turquoise);}
-.ai-close{margin-left:auto; color:var(--grey); font-size:18px;}
-.ai-body{padding:20px; overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:14px;}
-.ai-msg{background:var(--black-3); padding:14px 16px; border-radius:14px; border-top-left-radius:4px; font-size:13.5px; line-height:1.5; max-width:88%; animation:fadein .4s var(--ease);}
-.ai-msg.user{align-self:flex-end; background:var(--blue); color:#fff; border-radius:14px; border-top-right-radius:4px;}
+.ai-head h4{font-family:var(--font-display); font-size:15px; font-weight:600; letter-spacing:.01em;}
+.ai-head p{font-size:11px; color:var(--turquoise); margin-top:2px;}
+.ai-close{margin-left:auto; color:var(--grey); font-size:18px; cursor:pointer; padding:6px; transition:color .3s;}
+.ai-close:hover{color:var(--white);}
+.ai-progress{height:2px; background:rgba(255,255,255,.06); flex-shrink:0;}
+.ai-progress-bar{height:100%; width:0%; background:linear-gradient(90deg,var(--blue),var(--turquoise)); transition:width .6s var(--ease);}
+.ai-body{padding:20px; overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:14px; min-height:180px;}
+.ai-msg{background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.06); padding:13px 16px; border-radius:16px; border-top-left-radius:4px; font-size:13.5px; line-height:1.6; max-width:88%; animation:fadein .4s var(--ease); white-space:pre-line;}
+.ai-msg.user{align-self:flex-end; background:linear-gradient(135deg,var(--blue),var(--turquoise)); color:#04070f; border-radius:16px; border-top-right-radius:4px; border:none; font-weight:500;}
 @keyframes fadein{from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);}}
-.ai-options{display:flex; flex-wrap:wrap; gap:8px;}
-.ai-opt{padding:9px 14px; border:1px solid var(--line); border-radius:100px; font-size:12.5px; color:var(--white); transition:all .3s;}
-.ai-opt:hover{border-color:var(--turquoise); color:var(--turquoise);}
-.ai-footer{padding:16px 20px; border-top:1px solid var(--line);}
-.ai-wa{display:flex; align-items:center; justify-content:center; gap:10px; width:100%; background:#25D366; color:#04120a; padding:14px; border-radius:100px; font-size:13px; font-weight:600;}
+.ai-typing{display:flex; align-items:center; gap:4px; padding:14px 16px;}
+.ai-typing span{width:6px; height:6px; border-radius:50%; background:var(--turquoise); animation:aiTypingBounce 1.2s ease-in-out infinite;}
+.ai-typing span:nth-child(2){animation-delay:.15s;}
+.ai-typing span:nth-child(3){animation-delay:.3s;}
+@keyframes aiTypingBounce{0%,60%,100%{transform:translateY(0); opacity:.5;}30%{transform:translateY(-4px); opacity:1;}}
+.ai-chips{display:flex; flex-wrap:wrap; gap:8px; padding:0 20px 16px;}
+.ai-chip{padding:10px 16px; border:1px solid rgba(255,255,255,.14); border-radius:100px; font-size:12.5px; color:var(--white); background:rgba(255,255,255,.03); transition:all .25s var(--ease); cursor:pointer;}
+.ai-chip:hover{border-color:var(--turquoise); color:var(--turquoise); background:rgba(65,224,208,.08); transform:translateY(-2px);}
+.ai-summary{display:none; margin:0 20px 16px; padding:18px; border-radius:18px; background:rgba(65,224,208,.06); border:1px solid rgba(65,224,208,.22);}
+.ai-summary-title{font-family:var(--font-display); font-size:13px; color:var(--turquoise); letter-spacing:.06em; text-transform:uppercase; margin-bottom:12px;}
+.ai-summary-rows{display:flex; flex-direction:column; gap:8px;}
+.ai-summary-row{display:flex; justify-content:space-between; gap:16px; font-size:12.5px; color:var(--grey);}
+.ai-summary-row strong{color:var(--white); font-weight:500; text-align:right;}
+.ai-summary-reason{font-size:12.5px; line-height:1.6; color:var(--grey); margin-top:12px; padding-top:12px; border-top:1px solid rgba(255,255,255,.08);}
+.ai-inputbar{display:flex; align-items:center; gap:10px; padding:14px 16px; border-top:1px solid rgba(255,255,255,.08); flex-shrink:0;}
+.ai-inputbar input{flex:1; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); border-radius:100px; padding:12px 18px; font-size:13.5px; color:var(--white); font-family:var(--font-body); transition:border-color .3s;}
+.ai-inputbar input:focus{border-color:var(--turquoise);}
+.ai-inputbar input::placeholder{color:var(--grey-dim);}
+.ai-inputbar button{width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg,var(--blue),var(--turquoise)); color:#04070f; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:transform .3s var(--ease);}
+.ai-inputbar button:hover{transform:scale(1.08);}
+.ai-footer{padding:14px 20px 18px; flex-shrink:0;}
+.ai-wa{display:flex; align-items:center; justify-content:center; gap:10px; width:100%; background:#25D366; color:#04120a; padding:14px; border-radius:100px; font-size:13px; font-weight:600; transition:transform .3s var(--ease);}
+.ai-wa:hover{transform:translateY(-2px);}
 
 @media(max-width:900px){
   .why-grid,.services-grid{grid-template-columns:1fr;}
@@ -437,14 +456,11 @@ footer{padding:80px 0 40px; border-top:1px solid var(--line);}
   .nav-toggle{display:flex;}
   .footer-grid{grid-template-columns:1fr 1fr;}
   .gallery{columns:2 160px;}
-  .hero-meta{position:static; align-items:flex-start; max-width:100%; margin-top:32px; right:auto;}
-  .hero-meta .area{white-space:normal;}
   header{padding:16px 20px;}
   header.scrolled{padding:12px 20px;}
   .wrap{padding:0 20px;}
   section{padding:90px 0;}
   .hero{padding:120px 0 60px; min-height:94vh; flex-direction:column; align-items:flex-start; gap:28px;}
-  .hero-meta{flex-direction:row; flex-wrap:wrap; gap:10px; width:100%;}
   .final-cta{padding:70px 30px;}
   .cta-grid{grid-template-columns:1fr; gap:44px;}
   .final-cta-content{text-align:center;}
@@ -494,12 +510,15 @@ footer{padding:80px 0 40px; border-top:1px solid var(--line);}
   /* AI chat as a mobile bottom sheet */
   .ai-fab{width:68px; height:68px; bottom:18px; right:18px;}
   .ai-tooltip{right:14px; bottom:84px; max-width:200px;}
-  .ai-panel{left:12px; right:12px; bottom:82px; width:auto; max-width:none; max-height:78vh; border-radius:20px;}
-  .ai-body{padding:16px;}
+  .ai-panel{left:12px; right:12px; bottom:82px; width:auto; max-width:none; max-height:80vh; border-radius:22px;}
+  .ai-body{padding:16px; min-height:140px;}
   .ai-msg{font-size:14px; max-width:92%;}
   .ba-shell{aspect-ratio:1/1.05;}
   .ba-handle{width:42px; height:42px;}
-  .ai-opt{padding:11px 16px; font-size:13px;}
+  .ai-chip{padding:11px 16px; font-size:13px;}
+  .ai-chips{padding:0 16px 14px;}
+  .ai-summary{margin:0 16px 14px;}
+  .ai-inputbar{padding:12px 14px;}
   .ai-close{padding:10px; margin:-10px -6px -10px auto;}
   .faq-q{padding-right:6px;}
   .plan-modal{padding:0;}
@@ -557,10 +576,6 @@ footer{padding:80px 0 40px; border-top:1px solid var(--line);}
       <a href="#calculator" class="btn btn-primary" data-i18n="hero.cta1">Get Free Quote</a>
       <a href="#gallery" class="btn btn-ghost" data-i18n="hero.cta2">See Our Work</a>
     </div>
-  </div>
-  <div class="hero-meta">
-    <div class="area" data-i18n="hero.years">6+ Years Preserving Luxury Vehicles</div>
-    <div class="area" data-i18n="hero.mobile">Fully Mobile · We Come To You</div>
   </div>
   <div class="scroll-cue"><div class="scroll-line"></div><span data-i18n="hero.scroll">Scroll</span></div>
 </section>
@@ -884,6 +899,8 @@ footer{padding:80px 0 40px; border-top:1px solid var(--line);}
       <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032193/IMG_8368_zalysl.jpg" loading="lazy">
       <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032193/IMG_8369_eex0rt.jpg" loading="lazy">
       <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032198/IMG_8367_z2ysjl.jpg" loading="lazy">
+      <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032154/IMG_8382_aqq1rw.jpg" loading="lazy">
+      <img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783032151/IMG_8384_rrlg4s.jpg" loading="lazy">
     </div>
   </div>
 </section>
@@ -1067,21 +1084,29 @@ footer{padding:80px 0 40px; border-top:1px solid var(--line);}
   </div>
 </div>
 
-<div class="ai-fab" id="aiFab" role="button" aria-label="José AI Advisor"><img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783039242/IMG_8388_ehbbac.jpg" alt="José Detailing"></div>
+<div class="ai-fab" id="aiFab" role="button" aria-label="José Detail Concierge"><img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783039242/IMG_8388_ehbbac.jpg" alt="José Detailing"></div>
 <div class="ai-tooltip" id="aiTooltip">
   <span class="ai-tooltip-close" id="aiTooltipClose">✕</span>
-  <p data-i18n="ai.tooltip">Hey! I'm José's AI Advisor — I'm here to help if you have any questions.</p>
+  <p data-i18n="concierge.tooltip">Looking for the right treatment for your vehicle? I can help.</p>
 </div>
 <div class="ai-panel" id="aiPanel">
   <div class="ai-head"><div class="dot"><img src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1783039242/IMG_8388_ehbbac.jpg" alt="José Detailing"></div>
-    <div><h4 data-i18n="ai.title">José AI Advisor</h4><p data-i18n="ai.status">● Online now</p></div>
+    <div><h4 data-i18n="concierge.title">José Detail Concierge™</h4><p data-i18n="concierge.status">● Here to help</p></div>
     <span class="ai-close" id="aiClose">✕</span>
   </div>
+  <div class="ai-progress"><div class="ai-progress-bar" id="aiProgressBar"></div></div>
   <div class="ai-body" id="aiBody"></div>
+  <div class="ai-chips" id="aiChips"></div>
+  <div class="ai-summary" id="aiSummary"></div>
+  <div class="ai-inputbar" id="aiInputBar">
+    <input type="text" id="aiInput" data-i18n-placeholder="concierge.placeholder" placeholder="Type your message..." autocomplete="off">
+    <button type="button" id="aiSend" aria-label="Send"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+  </div>
   <div class="ai-footer" id="aiFooter" style="display:none;">
-    <a class="ai-wa" id="aiWaLink" target="_blank" data-i18n="ai.continueWa">Continue on WhatsApp</a>
+    <a class="ai-wa" id="aiWaLink" target="_blank" data-i18n="concierge.waCta">Book on WhatsApp</a>
   </div>
 </div>
+
 
 <script>
 /* ---------- i18n ---------- */
@@ -1159,15 +1184,13 @@ en:{
 "cta.f.submit":"Send via WhatsApp",
 "cta.f.errName":"Please enter your name.","cta.f.errPhone":"Please enter a valid phone number.","cta.f.sending":"Opening WhatsApp…",
 "footer.tagline":"Luxury mobile detailing and ceramic coatings across California.","footer.explore":"Explore","footer.areas":"Service Areas","footer.contact":"Contact","footer.rights":"All rights reserved.","footer.madewith":"Mobile detailing & ceramic coatings, California.",
-"ai.fabLabel":"José AI Advisor","ai.title":"José AI Advisor","ai.status":"● Online now","ai.continueWa":"Continue on WhatsApp","ai.tooltip":"Hey! I'm José's AI Advisor — I'm here to help if you have any questions.",
-"ai.greet":"Hi, I'm José's AI Advisor. I can help figure out exactly what your vehicle needs — mind if I ask a few quick questions?",
-"ai.start":"Sure, let's go","ai.q_make":"What are we working with today?","ai.opt_sedan":"Sedan / Coupe","ai.opt_suv":"SUV / Truck","ai.opt_exotic":"Exotic / Luxury",
-"ai.q_condition":"How's the paint looking these days?","ai.opt_good":"Pretty good","ai.opt_swirls":"Swirls & light scratches","ai.opt_rough":"Rough, needs correction",
-"ai.q_outside":"Does it sleep outside or in a garage?","ai.opt_outside":"Outside","ai.opt_garage":"Garage",
-"ai.q_coating":"Any ceramic coating on it currently?","ai.opt_yes":"Yes","ai.opt_no":"No, never coated",
-"ai.q_goal":"What's the main goal here?","ai.opt_protect":"Long-term protection","ai.opt_sell":"Getting ready to sell","ai.opt_refresh":"Just needs a refresh",
-"ai.summary":"Perfect — based on that, I'd recommend a paint correction + ceramic coating package. Let's get you an exact quote from José directly on WhatsApp.",
-"ai.waMessage":"Hi José! I used the AI Advisor on your site. Vehicle type: {vehicle}. Paint condition: {condition}. Parking: {parking}. Current coating: {coating}. Goal: {goal}. Could you send me a quote?"
+"concierge.title":"José Detail Concierge™","concierge.status":"● Here to help","concierge.tooltip":"Looking for the right treatment for your vehicle? I can help.",
+"concierge.greet":"Hi 👋 I'm the José Detail Concierge™. I'm here to help you find the ideal treatment for your vehicle — it only takes a minute.",
+"concierge.chip_start":"Let's get started","concierge.chip_question":"I have a quick question",
+"concierge.placeholder":"Type your message...","concierge.error":"Sorry, something went wrong on my end — could you try again, or reach us directly on WhatsApp?",
+"concierge.sumTitle":"Your Summary","concierge.sumVehicle":"Vehicle","concierge.sumType":"Type","concierge.sumColor":"Color","concierge.sumService":"Recommended Service","concierge.sumGoal":"Goal","concierge.sumUrgency":"Timing",
+"concierge.waCta":"Book on WhatsApp",
+"concierge.waGreeting":"Hello José Detailing, I used the site concierge.","concierge.waName":"Name","concierge.waVehicle":"Vehicle","concierge.waColor":"Color","concierge.waService":"Recommended service","concierge.waGoal":"Goal","concierge.waUrgency":"Timing","concierge.waClosing":"Looking forward to your reply, thank you."
 },
 es:{
 "nav.about":"Nosotros","nav.services":"Servicios","nav.maintenance":"Planes disponibles","nav.ceramic":"Ceramic Coating","nav.gallery":"Galería","nav.areas":"Contacto","nav.faq":"Preguntas Frecuentes","nav.quote":"Cotización Gratis",
@@ -1242,15 +1265,13 @@ es:{
 "cta.f.submit":"Enviar por WhatsApp",
 "cta.f.errName":"Ingresá tu nombre.","cta.f.errPhone":"Ingresá un teléfono válido.","cta.f.sending":"Abriendo WhatsApp…",
 "footer.tagline":"Mobile detailing de lujo y ceramic coatings en toda California.","footer.explore":"Explorar","footer.areas":"Zonas de Cobertura","footer.contact":"Contacto","footer.rights":"Todos los derechos reservados.","footer.madewith":"Mobile detailing y ceramic coatings, California.",
-"ai.fabLabel":"José AI Advisor","ai.title":"José AI Advisor","ai.status":"● En línea","ai.continueWa":"Continuar en WhatsApp","ai.tooltip":"¡Hola! Soy el asesor IA de José — estoy para ayudarte si tenés alguna duda.",
-"ai.greet":"Hola, soy el AI Advisor de José. Puedo ayudarte a definir exactamente qué necesita tu auto — ¿te hago un par de preguntas rápidas?",
-"ai.start":"Dale, empecemos","ai.q_make":"¿Con qué estamos trabajando hoy?","ai.opt_sedan":"Sedán / Coupé","ai.opt_suv":"SUV / Camioneta","ai.opt_exotic":"Exótico / Lujo",
-"ai.q_condition":"¿Cómo está la pintura hoy en día?","ai.opt_good":"Bastante bien","ai.opt_swirls":"Marcas y rayones leves","ai.opt_rough":"Mal, necesita corrección",
-"ai.q_outside":"¿Duerme afuera o en garage?","ai.opt_outside":"Afuera","ai.opt_garage":"Garage",
-"ai.q_coating":"¿Tiene ceramic coating actualmente?","ai.opt_yes":"Sí","ai.opt_no":"No, nunca tuvo",
-"ai.q_goal":"¿Cuál es el objetivo principal?","ai.opt_protect":"Protección a largo plazo","ai.opt_sell":"Preparándolo para vender","ai.opt_refresh":"Solo necesita un refresh",
-"ai.summary":"Perfecto — con esa info, te recomendaría un paquete de corrección de pintura + ceramic coating. Te paso directo con José por WhatsApp para la cotización exacta.",
-"ai.waMessage":"¡Hola José! Usé el AI Advisor de tu web. Tipo de vehículo: {vehicle}. Estado de pintura: {condition}. Estacionamiento: {parking}. Coating actual: {coating}. Objetivo: {goal}. ¿Me pasás una cotización?"
+"concierge.title":"José Detail Concierge™","concierge.status":"● Acá para ayudarte","concierge.tooltip":"¿Buscás el tratamiento ideal para tu auto? Te puedo ayudar.",
+"concierge.greet":"Hola 👋 Soy el José Detail Concierge™. Estoy acá para ayudarte a encontrar el tratamiento ideal para tu vehículo — solo toma un minuto.",
+"concierge.chip_start":"Dale, empecemos","concierge.chip_question":"Tengo una pregunta rápida",
+"concierge.placeholder":"Escribí tu mensaje...","concierge.error":"Uy, tuve un problema de mi lado — ¿podés intentar de nuevo, o preferís escribirnos directo por WhatsApp?",
+"concierge.sumTitle":"Tu Resumen","concierge.sumVehicle":"Vehículo","concierge.sumType":"Tipo","concierge.sumColor":"Color","concierge.sumService":"Servicio Recomendado","concierge.sumGoal":"Objetivo","concierge.sumUrgency":"Tiempos",
+"concierge.waCta":"Reservar por WhatsApp",
+"concierge.waGreeting":"Hola José Detailing, usé el concierge de la web.","concierge.waName":"Nombre","concierge.waVehicle":"Vehículo","concierge.waColor":"Color","concierge.waService":"Servicio recomendado","concierge.waGoal":"Objetivo","concierge.waUrgency":"Tiempos","concierge.waClosing":"Quedo atento a tu respuesta, muchas gracias."
 }
 };
 let currentLang = localStorage.getItem('jd_lang') || (navigator.language.startsWith('es') ? 'es' : 'en');
@@ -1295,7 +1316,7 @@ document.querySelectorAll('.lang-switch button').forEach(b=>{
     currentLang = b.dataset.lang;
     localStorage.setItem('jd_lang', currentLang);
     applyTranslations();
-    aiReset();
+    conciergeReset();
     closePlanModal();
   });
 });
@@ -1526,97 +1547,194 @@ const aiFab = document.getElementById('aiFab');
 const aiPanel = document.getElementById('aiPanel');
 const aiClose = document.getElementById('aiClose');
 const aiBody = document.getElementById('aiBody');
+const aiChips = document.getElementById('aiChips');
+const aiSummary = document.getElementById('aiSummary');
+const aiInput = document.getElementById('aiInput');
+const aiSend = document.getElementById('aiSend');
 const aiFooter = document.getElementById('aiFooter');
 const aiWaLink = document.getElementById('aiWaLink');
+const aiProgressBar = document.getElementById('aiProgressBar');
 const WHATSAPP_NUMBER = "16264269575";
+const CONCIERGE_ENDPOINT = "/api/chat";
 
-let aiState = {};
-function t(key){ return translations[currentLang][key]; }
+function tc(key){ return (translations[currentLang] && translations[currentLang][key]) || ''; }
 
-function aiMsg(text, isUser){
+let conciergeHistory = [];
+let conciergeState = {};
+let conciergeBusy = false;
+let conciergeStarted = false;
+
+function scrollAiBody(){ aiBody.scrollTop = aiBody.scrollHeight; }
+
+function addUserBubble(text){
   const div = document.createElement('div');
-  div.className = 'ai-msg' + (isUser ? ' user' : '');
+  div.className = 'ai-msg user';
   div.textContent = text;
   aiBody.appendChild(div);
-  aiBody.scrollTop = aiBody.scrollHeight;
-}
-function aiOptions(opts, onPick){
-  const wrap = document.createElement('div');
-  wrap.className = 'ai-options';
-  opts.forEach(o=>{
-    const b = document.createElement('div');
-    b.className = 'ai-opt';
-    b.textContent = t(o.labelKey);
-    b.addEventListener('click', ()=>{
-      wrap.remove();
-      aiMsg(t(o.labelKey), true);
-      onPick(o);
-    });
-    wrap.appendChild(b);
-  });
-  aiBody.appendChild(wrap);
-  aiBody.scrollTop = aiBody.scrollHeight;
+  scrollAiBody();
 }
 
-function aiReset(){
+function addTypingIndicator(){
+  const div = document.createElement('div');
+  div.className = 'ai-msg ai-typing';
+  div.id = 'aiTypingIndicator';
+  div.innerHTML = '<span></span><span></span><span></span>';
+  aiBody.appendChild(div);
+  scrollAiBody();
+}
+function removeTypingIndicator(){
+  const el = document.getElementById('aiTypingIndicator');
+  if(el) el.remove();
+}
+
+function typeAssistantMessage(text){
+  return new Promise((resolve)=>{
+    const div = document.createElement('div');
+    div.className = 'ai-msg';
+    aiBody.appendChild(div);
+    const words = String(text || '').split(' ');
+    let i = 0;
+    (function step(){
+      div.textContent = words.slice(0, i + 1).join(' ');
+      scrollAiBody();
+      i++;
+      if(i < words.length){
+        setTimeout(step, 24 + Math.random() * 26);
+      } else {
+        resolve();
+      }
+    })();
+  });
+}
+
+function renderChips(options, onPick){
+  aiChips.innerHTML = '';
+  if(!options || !options.length) return;
+  options.slice(0, 4).forEach((opt)=>{
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'ai-chip';
+    b.textContent = opt;
+    b.addEventListener('click', ()=>{
+      aiChips.innerHTML = '';
+      onPick(opt);
+    });
+    aiChips.appendChild(b);
+  });
+}
+
+function setProgress(pct){
+  aiProgressBar.style.width = Math.max(0, Math.min(100, pct || 0)) + '%';
+}
+
+function renderSummary(state, service, reason){
+  state = state || {};
+  const rows = [
+    [tc('concierge.sumVehicle'), [state.vehicleBrand, state.vehicleModel, state.vehicleYear].filter(Boolean).join(' ')],
+    [tc('concierge.sumType'), state.vehicleType],
+    [tc('concierge.sumColor'), state.color],
+    [tc('concierge.sumService'), service],
+    [tc('concierge.sumGoal'), state.goal],
+    [tc('concierge.sumUrgency'), state.urgency],
+  ].filter((r)=> r[1]);
+
+  aiSummary.innerHTML =
+    '<div class="ai-summary-title">' + tc('concierge.sumTitle') + '</div>' +
+    '<div class="ai-summary-rows">' +
+      rows.map((r)=> '<div class="ai-summary-row"><span>' + r[0] + '</span><strong>' + r[1] + '</strong></div>').join('') +
+    '</div>' +
+    (reason ? '<p class="ai-summary-reason">' + reason + '</p>' : '');
+  aiSummary.style.display = 'block';
+
+  const lines = [tc('concierge.waGreeting')];
+  if(state.name) lines.push(tc('concierge.waName') + ': ' + state.name);
+  const vehicle = [state.vehicleBrand, state.vehicleModel, state.vehicleYear].filter(Boolean).join(' ');
+  if(vehicle) lines.push(tc('concierge.waVehicle') + ': ' + vehicle);
+  if(state.color) lines.push(tc('concierge.waColor') + ': ' + state.color);
+  if(service) lines.push(tc('concierge.waService') + ': ' + service);
+  if(state.goal) lines.push(tc('concierge.waGoal') + ': ' + state.goal);
+  if(state.urgency) lines.push(tc('concierge.waUrgency') + ': ' + state.urgency);
+  lines.push(tc('concierge.waClosing'));
+
+  aiWaLink.href = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(lines.join('\n'));
+  aiFooter.style.display = 'block';
+  scrollAiBody();
+}
+
+async function sendConciergeMessage(text){
+  if(conciergeBusy || !text || !text.trim()) return;
+  conciergeBusy = true;
+  aiInput.value = '';
+  aiChips.innerHTML = '';
+  addUserBubble(text);
+  conciergeHistory.push({ role: 'user', content: text });
+  addTypingIndicator();
+
+  try{
+    const res = await fetch(CONCIERGE_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        messages: conciergeHistory,
+        lang: currentLang,
+        knownState: conciergeState,
+      }),
+    });
+    const data = await res.json();
+    removeTypingIndicator();
+
+    if(!res.ok || data.error){
+      await typeAssistantMessage(tc('concierge.error'));
+      conciergeBusy = false;
+      return;
+    }
+
+    conciergeState = data.state || conciergeState;
+    setProgress(data.progress);
+    conciergeHistory.push({ role: 'assistant', content: data.reply });
+
+    await typeAssistantMessage(data.reply);
+    renderChips(data.quickReplies, (opt)=> sendConciergeMessage(opt));
+
+    if(data.readyForSummary && data.recommendedService){
+      renderSummary(conciergeState, data.recommendedService, data.recommendationReason);
+    }
+  } catch(err){
+    removeTypingIndicator();
+    await typeAssistantMessage(tc('concierge.error'));
+  }
+  conciergeBusy = false;
+}
+
+function conciergeReset(){
   aiBody.innerHTML = '';
+  aiChips.innerHTML = '';
+  aiSummary.style.display = 'none';
+  aiSummary.innerHTML = '';
   aiFooter.style.display = 'none';
-  aiState = {};
-  setTimeout(()=>{
-    aiMsg(t('ai.greet'));
-    setTimeout(()=>{
-      aiOptions([{labelKey:'ai.start'}], ()=> aiStepVehicle());
-    }, 400);
+  setProgress(0);
+  conciergeHistory = [];
+  conciergeState = {};
+  conciergeStarted = false;
+}
+
+function conciergeStart(){
+  if(conciergeStarted) return;
+  conciergeStarted = true;
+  setTimeout(async ()=>{
+    await typeAssistantMessage(tc('concierge.greet'));
+    renderChips([tc('concierge.chip_start'), tc('concierge.chip_question')], (opt)=> sendConciergeMessage(opt));
   }, 300);
 }
-function aiStepVehicle(){
-  aiMsg(t('ai.q_make'));
-  aiOptions([
-    {labelKey:'ai.opt_sedan', val:'Sedan/Coupe'},
-    {labelKey:'ai.opt_suv', val:'SUV/Truck'},
-    {labelKey:'ai.opt_exotic', val:'Exotic/Luxury'},
-  ], (o)=>{ aiState.vehicle = t(o.labelKey); aiStepCondition(); });
-}
-function aiStepCondition(){
-  aiMsg(t('ai.q_condition'));
-  aiOptions([
-    {labelKey:'ai.opt_good'}, {labelKey:'ai.opt_swirls'}, {labelKey:'ai.opt_rough'}
-  ], (o)=>{ aiState.condition = t(o.labelKey); aiStepParking(); });
-}
-function aiStepParking(){
-  aiMsg(t('ai.q_outside'));
-  aiOptions([
-    {labelKey:'ai.opt_outside'}, {labelKey:'ai.opt_garage'}
-  ], (o)=>{ aiState.parking = t(o.labelKey); aiStepCoating(); });
-}
-function aiStepCoating(){
-  aiMsg(t('ai.q_coating'));
-  aiOptions([
-    {labelKey:'ai.opt_yes'}, {labelKey:'ai.opt_no'}
-  ], (o)=>{ aiState.coating = t(o.labelKey); aiStepGoal(); });
-}
-function aiStepGoal(){
-  aiMsg(t('ai.q_goal'));
-  aiOptions([
-    {labelKey:'ai.opt_protect'}, {labelKey:'ai.opt_sell'}, {labelKey:'ai.opt_refresh'}
-  ], (o)=>{ aiState.goal = t(o.labelKey); aiFinish(); });
-}
-function aiFinish(){
-  setTimeout(()=>{
-    aiMsg(t('ai.summary'));
-    const msg = t('ai.waMessage')
-      .replace('{vehicle}', aiState.vehicle)
-      .replace('{condition}', aiState.condition)
-      .replace('{parking}', aiState.parking)
-      .replace('{coating}', aiState.coating)
-      .replace('{goal}', aiState.goal);
-    aiWaLink.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
-    aiFooter.style.display = 'block';
-  }, 300);
-}
+
+aiSend.addEventListener('click', ()=> sendConciergeMessage(aiInput.value));
+aiInput.addEventListener('keydown', (e)=>{
+  if(e.key === 'Enter'){ e.preventDefault(); sendConciergeMessage(aiInput.value); }
+});
+
 aiFab.addEventListener('click', ()=>{
   aiPanel.classList.add('open');
-  if(!aiBody.hasChildNodes()) aiReset();
+  conciergeStart();
   hideAiTooltip();
 });
 aiClose.addEventListener('click', ()=> aiPanel.classList.remove('open'));
