@@ -68,7 +68,7 @@ h1,h2,h3{font-family:var(--font-display); font-weight:500; letter-spacing:-.01em
 
 /* NAV */
 header{
-  position:fixed; top:0; left:0; right:0; z-index:500;
+  position:fixed; top:0; left:0; right:0; z-index:610;
   display:flex; align-items:center; justify-content:space-between;
   padding:22px 40px; transition:background .5s var(--ease), padding .5s var(--ease), border-color .5s var(--ease);
   border-bottom:1px solid transparent;
@@ -443,7 +443,8 @@ footer{padding:80px 0 40px; border-top:1px solid var(--line);}
   header.scrolled{padding:12px 20px;}
   .wrap{padding:0 20px;}
   section{padding:90px 0;}
-  .hero{padding:120px 0 60px; min-height:94vh;}
+  .hero{padding:120px 0 60px; min-height:94vh; flex-direction:column; align-items:flex-start; gap:28px;}
+  .hero-meta{flex-direction:row; flex-wrap:wrap; gap:10px; width:100%;}
   .final-cta{padding:70px 30px;}
   .cta-grid{grid-template-columns:1fr; gap:44px;}
   .final-cta-content{text-align:center;}
@@ -553,8 +554,8 @@ footer{padding:80px 0 40px; border-top:1px solid var(--line);}
     <h1><span class="hero-shine" data-i18n="hero.title1">Protect Your</span><br><span class="italic" data-i18n="hero.title2">Investment.</span></h1>
     <p class="hero-subtitle" data-i18n="hero.subtitle">Professional ceramic coatings and premium mobile detailing, brought directly to your driveway.</p>
     <div class="hero-cta">
-      <a href="#cta" class="btn btn-primary" data-i18n="hero.cta1">Get Free Quote</a>
-      <a href="#before-after" class="btn btn-ghost" data-i18n="hero.cta2">See Our Work</a>
+      <a href="#calculator" class="btn btn-primary" data-i18n="hero.cta1">Get Free Quote</a>
+      <a href="#gallery" class="btn btn-ghost" data-i18n="hero.cta2">See Our Work</a>
     </div>
   </div>
   <div class="hero-meta">
